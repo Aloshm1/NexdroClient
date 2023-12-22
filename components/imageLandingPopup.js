@@ -1188,7 +1188,7 @@ function ImageLandingPopup() {
                 return (
                   <Grid item xs={12} sm={6} md={4} lg={3} xl={12/5} key={index}>
                     <div className={styles.homepageOuterFileContainer}>
-                      <Link href={`/?image=${item.slug}`}
+                      <Link  href={router?router.asPath.replace(router.query.image, item.slug):""}
                             >
                         <a className={styles.homepageFileContainer}>
                           {item.fileType !== "video" ? (

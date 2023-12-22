@@ -28,7 +28,7 @@
   margin-bottom: 17px;
 }
 .loc_p {
-  font-family: roboto;
+  font-family: roboto-regular;
   font-weight: normal;
   font-size: 14px;
   color: #303f4b;
@@ -51,7 +51,7 @@
   padding-bottom: 14px;
 }
 .fan_para {
-  font-family: roboto;
+  font-family: roboto-regular;
   font-size: 16px;
   text-align: center;
   line-height: 19px;
@@ -65,7 +65,7 @@
   line-height: 44px;
 }
 .feed_option {
-  font-family: roboto;
+  font-family: roboto-regular;
   font-size: 18px;
   line-height: 22px;
   text-align: left;

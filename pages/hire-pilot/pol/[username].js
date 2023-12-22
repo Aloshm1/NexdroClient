@@ -93,6 +93,9 @@ var socket, selectedChatCompare;
 export async function getServerSideProps(context) {
   const { params } = context;
   const { username } = params;
+  const delist= await fetch(`${domain}/api/pilot/deactivatedPilots/${username}`)
+  const list=await delist.json()
+  
   const res = await fetch(`${domain}/api/pilot/pilotDetails/${username}`);
   const data = await res.json();
 
@@ -133,6 +136,7 @@ export async function getServerSideProps(context) {
         educationDetails,
         username,
         experienceDetails,
+        list
       },
     };
   }
@@ -162,6 +166,7 @@ export async function getServerSideProps(context) {
       educationDetails,
       username,
       experienceDetails,
+      list
     },
   };
 }
@@ -176,8 +181,9 @@ const newone = ({
   educationDetails,
   username,
   experienceDetails,
+  list,
 }) => {
-  console.log(videos, "vdo");
+
   const router = useRouter();
   const [myFollowers,setMyFollowers]=useState(followers)
 
@@ -220,9 +226,15 @@ const newone = ({
 
     return scaled.toFixed(1) + suffix;
   };
+  useEffect(()=>{
+    if(list?.destatus){
+      router.push('/noComponent')
+    }
+  })
+  
   const redirectPilot = (id) => {
     axios.post(`${domain}/api/pilot/getPilotId`, { userId: id }).then((res) => {
-      if (res.data[0]) Router.push(`/pilot/${res.data[0].userName}`);
+      if (res.data[0]) router.push(`/pilot/${res.data[0].userName}`);
     });
   };
 
@@ -426,6 +438,7 @@ const newone = ({
   };
 
   useEffect(() => {
+  
     if (router.query.image) {
       try {
         document.getElementById("toTop").scrollTo(0, 0);
@@ -633,6 +646,9 @@ const newone = ({
 
   return (
     <>
+    {list?.destatus ?(
+      ''
+    ):( <>
      {data.data ? (
         <>
           <div style = {{ minHeight: "100vh", display: "flex", alignItems: "center", justifyContent: "center" }}>
@@ -832,7 +848,7 @@ const newone = ({
               <div className={styles.loc_container}>
                 <LocationOnIcon sx={{ width: "19px", height: "19px" }} />{" "}
                 <p style={{ margin: 0 }} className={styles.loc_p}>
-                  {data.state},{data.country}({data.workType})
+                  {data.city},{data.country}({data.workType})
                 </p>
               </div>
 
@@ -2037,6 +2053,8 @@ const newone = ({
           </div>
         </Drawer>
       </Container>
+      )}
+      </>
       )}
     </>
   );
