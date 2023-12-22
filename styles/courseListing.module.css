@@ -1,0 +1,120 @@
+.courseImageContainer{
+  position: relative;
+}
+
+.courseImageContainer span{
+  position: relative !important;
+}
+
+.courseEditIcon{
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.courseImage{
+  width: 100% !important;
+  height: 100% !important;
+  position: relative !important;
+}
+
+.courseDetailsContainer{
+  padding: 10px;
+}
+
+.courseFeeEnquiryContainer{
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+  font-size: 30px;
+  font-family: roboto-bold;
+  line-height: 40px;
+  margin: 0;
+}
+
+.CourseContent{
+  display: flex;
+  align-items: center;
+  margin: 10px 0px 0px 0px;
+  gap: 10px;
+}
+
+.courseTitle{
+  display: block;
+  font-size: 30px;
+  font-family: roboto-bold;
+  line-height: 40px;
+  margin: 0;
+  cursor: pointer;
+  color: #000;
+}
+
+.courseTitle:hover, .courseTrainingCenterName:hover{
+  color: #00e7fc;
+  text-decoration: underline;
+}
+
+.courseTrainingCenterName{
+  font-size: 18px;
+  font-family: roboto-bold;
+  line-height: 26px;
+  margin: 0;
+  cursor: pointer;
+  display: block;
+  color: #000;
+}
+
+.courseFilterInputContainer{
+  width: 90%;
+  margin: auto;
+  margin-bottom: 30px;
+  padding: 10px 0px;
+  background: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.courseFilterInput{
+  padding: 5px 20px 5px 35px;
+  font-size: 16px;
+  border: 0;
+  outline: 0;
+  width: 100%;
+}
+
+.courseFilterInputFirst{
+  border-right: 1px solid #c5c5c5;
+}
+
+.courseFilterInputIconContainer{
+  position: relative;
+}
+
+.courseFilterInputIcon{
+  position: absolute;
+  left: 10px;
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.courseDescription{
+  height: 95px;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.createCourseBtnContainer{
+  margin-bottom: 10px;
+  text-align: right;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .courseTitle{
+    font-size: 22px;
+    line-height: 27px;
+  }
+}

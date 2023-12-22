@@ -1,0 +1,208 @@
+.mainDiv {
+  min-width: 400px;
+}
+.navTab {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+  background: transparent linear-gradient(157deg, #00e7fc, #4ffea3) 0 0
+    no-repeat padding-box;
+}
+.profilePic {
+  height: 45px;
+  width: 45px;
+  border-radius: 23px;
+  cursor: pointer;
+}
+.messagePic {
+  height: 30px;
+  width: 30px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.mainName {
+  font-family: roboto-bold;
+  font-size: 20px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.chatBox {
+
+  height: 400px;
+  position: relative;
+  padding: 10px;
+  background-color: #f3f3f3;
+  background-image: url(../images/chatBackground.png);
+  background-size: contain;
+}
+/* .chatBox:after{
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url();
+  opacity: 0.05;
+} */
+.msg {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.input {
+  margin: 10px;
+  height: 40px;
+  border: none;
+  flex: 1;
+  border-radius: 40px;
+  outline: 1px solid gray;
+  font-family: roboto-regular;
+  font-size: 16px;
+  padding-left: 15px;
+}
+.send {
+  width: fit-content;
+  background: transparent linear-gradient(180deg, #00e7fc, #4ffea3) 0 0
+  no-repeat padding-box;
+  border-radius: 40px;
+  padding: 8px 7px 6px 10px;
+  margin-right: 10px;
+  cursor: pointer;
+  color: #fff;
+}
+.msgBlock {
+  /* align-items: center;
+    */
+  margin-bottom: 5px;
+  width: fit-content;
+  max-width: 80%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  position: relative;
+}
+.message {
+  font-family: roboto-regular;
+  font-size: 16px;
+  margin-left: 10px;
+  padding: 5px 10px 5px 30px;
+  border-radius: 5px;
+  background-color: #4ffea3;
+  z-index: 5;
+}
+.msgBlock1 {
+  /* align-items: center;
+    float: right;
+    margin-bottom: 10px; */
+  width: fit-content;
+  max-width: 80%;
+  margin-bottom: 5px;
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+  position: relative;
+}
+
+.message1 {
+  font-family: roboto-regular;
+  font-size: 16px;
+  margin-right: 10px;
+  padding: 5px 30px 5px 10px;
+  border-radius: 5px;
+  background-color: #00e7fc;
+  z-index: 5;
+}
+.date{
+  position: absolute;
+  bottom: 0px;
+  right: 43px;
+  z-index: 999;
+  font-size: 8px;
+  font-family: roboto-regular;
+  color: #797676;
+}
+.date1{
+  position: absolute;
+  bottom: 0px;
+  left: 43px;
+  z-index: 999;
+  font-size: 8px;
+  font-family: roboto-regular;
+  color: #797676;
+}
+.msgDiv1{
+  content: " ";
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  background-color: #00e7fc;
+  transform: rotate(45deg);
+  right: 35px;
+  top: calc(50% - 10px);
+  z-index: 1;
+
+  }
+  .msgDiv2{
+    content: " ";
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    background-color: #4ffea3;
+    transform: rotate(45deg);
+    left: 35px;
+    top: calc(50% - 10px);
+    z-index: 1;
+  
+    }
+.navScroll{
+    scrollbar-width: thin !important;
+    scrollbar-color: #e5e5e5 #fff;
+  
+}
+.navScroll::-webkit-scrollbar {
+    height: 2px;               /* width of the entire scrollbar */
+  }
+  
+  .navScroll::-webkit-scrollbar-thumb {
+    border-radius: 2px;       /* roundness of the scroll thumb */
+    border: 1px solid #e5e5e5;
+    background-color: #e5e5e5;  /* creates padding around scroll thumb */
+  }
+
+  .typing{
+    background-color: #4ffea3;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-align: center;
+    padding-left: 10px;
+  }
+  @media only screen and (min-width: 500px) {
+    .mainDiv {
+      width: 450px;
+    }
+    
+  }
+  @media only screen and (max-width: 500px) {
+    .mainDiv {
+      min-width: 100%;
+    }
+    
+  }
+  .headDate{
+    font-family: roboto-regular;
+    font-size: 9px;
+    text-align: center;
+    background-color: #ffffff;
+    border: 1px solid #a5a5a5;
+    border-radius: 2px;
+    padding: 2px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 5px auto;
+  }

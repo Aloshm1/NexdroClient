@@ -1,0 +1,66 @@
+  <div style={{ marginBottom: "20px" }}>
+        <div className={css.addNew}>Add new</div>
+        <div className={css.mainTitle}>Experience Details:</div>
+        <Grid container columnSpacing={2}>
+          <Grid item xl={6} lg={6} md={6} sm={12} xs={12}>
+            <div className={css.expDiv}>
+              <div className={css.editDelete}>
+                <EditIcon className={css.edit} />
+                <DeleteIcon className={css.delete} />
+              </div>
+              <div className={css.role}>Ariel Shooter</div>
+              <div className={css.companyName}>
+                NexDro Technologies | Full-Time
+              </div>
+              <div className={css.description}>January 2020 - Present</div>
+              <div className={css.description}>Remote Work</div>
+            </div>
+          </Grid>
+          <Grid item xl={6} lg={6} md={6} sm={12} xs={12}>
+            <div className={css.expDiv}>
+              <div className={css.editDelete}>
+                <EditIcon className={css.edit} />
+                <DeleteIcon className={css.delete} />
+              </div>
+              <div className={css.role}>Land Inspection Pilot</div>
+              <div className={css.companyName}>
+                Nexevo Technologies | Full-Time
+              </div>
+              <div className={css.description}>January 2020 - March 2022</div>
+              <div className={css.description}>Bangalore, Karnataka, India</div>
+            </div>
+          </Grid>
+        </Grid>
+      </div>
+      {/* //educational Details */}
+      <div style={{ marginBottom: "20px" }}>
+        <div className={css.addNew}>Add new</div>
+        <div className={css.mainTitle}>Educational Details:</div>
+        <Grid container columnSpacing={2}>
+          <Grid item xl={6} lg={6} md={6} sm={12} xs={12}>
+            <div className={css.expDiv}>
+              <div className={css.editDelete}>
+                <EditIcon className={css.edit} />
+                <DeleteIcon className={css.delete} />
+              </div>
+              <div className={css.role}>
+                BE in Electronics and communications
+              </div>
+              <div className={css.companyName}>AMC engineering college</div>
+              <div className={css.description}>January 2017 - March 2020</div>
+            </div>
+          </Grid>
+          <Grid item xl={6} lg={6} md={6} sm={12} xs={12}>
+            <div className={css.expDiv}>
+              <div className={css.editDelete}>
+                <EditIcon className={css.edit} />
+                <DeleteIcon className={css.delete} />
+              </div>
+              <div className={css.role}>Secondary School</div>
+              <div className={css.companyName}>Dayananda Sagar PU College</div>
+              <div className={css.description}>May 2015 - June 2017</div>
+              {/* <div className={css.description}>Bangalore, Karnataka, India</div> */}
+            </div>
+          </Grid>
+        </Grid>
+      </div>

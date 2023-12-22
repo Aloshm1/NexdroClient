@@ -1,0 +1,62 @@
+.companyName {
+  font-family: roboto-bold;
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+.heading {
+  font-family: roboto-bold;
+  font-size: 17px;
+  margin-bottom: 10px;
+  text-decoration: underline;
+}
+.text {
+  font-family: roboto-regular;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+.mediaLinks {
+  display: flex;
+  align-items: center;
+}
+.leftBar{
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+.leftBar li{
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+.tag {
+  font-family: roboto-regular;
+  font-size: 14px;
+  cursor: pointer;
+  color: #f5f5f5;
+  list-style-type: none;
+}
+.tag:hover {
+  color: #00e7fc;
+}
+.copyRight {
+  font-family: roboto-regular;
+  font-size: 14px;
+}
+.rightText {
+  font-family: roboto-regular;
+  font-size: 14px;
+}
+.copyrightContainer{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  gap: 20px 20px;
+}
+.footer_ul{
+  padding-left: 0;
+}
+@media only screen and (max-width: 600px) {
+  .copyrightContainer{
+    margin-top: 20px;
+  }
+}

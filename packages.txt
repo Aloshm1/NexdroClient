@@ -1,0 +1,44 @@
+@mui/material, @mui/lab (For style library)
+  - @emotion/react
+  - @emotion/styled
+  - @emotion/core@10.1.1
+
+@mui/icons-material (For icons)
+  - No additional dependencies
+
+react-select (for multi select)
+  - No additional dependencies
+
+@googlemaps/react-wrapper (for wrapping API)
+  - No additional dependencies
+
+Axios (Api call)
+  - No additional dependencies
+
+dotenv(Setting environment variables)
+  - No additional dependencies
+
+draft-js (text editor)
+  - React-draft-wysiwyg
+  - draftjs-to-html
+
+file-saver (to download file)
+  - No additional dependencies
+
+html-react-parser (To convert html to jsx)
+  - No additional dependencies
+
+react-autocomplete-places (To include google API)
+  - No additional dependencies
+
+react-share (To share link)
+  - No additional dependencies
+
+socket.io-client (Chat)
+  - No additional dependencies
+
+react-sortable-hoc (Rearrange files)
+  react-photo-gallery
+
+react-material-ui-carousel(carousel)
+  - No additional dependencies

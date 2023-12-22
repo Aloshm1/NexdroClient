@@ -1,0 +1,24 @@
+<svg id="invisible_box" data-name="invisible box" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48" height="48" viewBox="0 0 48 48">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_337" data-name="Rectangle 337" width="48" height="48" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_65" data-name="Mask Group 65" clip-path="url(#clip-path)">
+    <g id="Layer_2" data-name="Layer 2">
+      <g id="invisible_box-2" data-name="invisible box">
+        <rect id="Rectangle_339" data-name="Rectangle 339" width="48" height="48" fill="none"/>
+      </g>
+      <g id="icons_Q2" data-name="icons Q2">
+        <g id="Group_735" data-name="Group 735">
+          <path id="Path_1245" data-name="Path 1245" d="M12,38h4a2,2,0,0,0,0-4H12a2,2,0,0,0,0,4Z"/>
+          <path id="Path_1246" data-name="Path 1246" d="M12,32H24a2,2,0,0,0,0-4H12a2,2,0,0,0,0,4Z"/>
+          <path id="Path_1247" data-name="Path 1247" d="M12,26H24a2,2,0,0,0,0-4H12a2,2,0,0,0,0,4Z"/>
+          <path id="Path_1248" data-name="Path 1248" d="M36,8H11a2,2,0,0,0,0,4H35V38a2,2,0,0,0,4,0V11a2.9,2.9,0,0,0-3-3Z"/>
+          <path id="Path_1249" data-name="Path 1249" d="M42,2H17a2,2,0,0,0,0,4H41V32a2,2,0,0,0,4,0V5a2.9,2.9,0,0,0-3-3Z"/>
+          <path id="Path_1250" data-name="Path 1250" d="M31,14H5a2,2,0,0,0-2,2V44a2,2,0,0,0,2,2H31a2,2,0,0,0,2-2V16A2,2,0,0,0,31,14ZM29,42H7V18H29Z"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

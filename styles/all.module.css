@@ -1,0 +1,10 @@
+.Container {
+    max-width: 1200px !important;
+    margin: 0px auto;
+  }
+  .pl_xs_30 {
+    padding-left: 30px !important;
+  }
+  .pl_xs_50 {
+    padding-left: 50px !important;
+  }

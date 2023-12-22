@@ -1,0 +1,296 @@
+.applyJobOuterContainer{
+  background-color: #f8f8f8;
+  padding: 0px 0px 34px 0px;
+  position: relative;
+}
+.jobSearchTitleContainer{
+  background-color: rgba(0, 166, 226, 0.05);
+  text-align: center;
+  padding: 20px 0px;
+}
+.jobSearchTitle{
+  font-size: 24px;
+  font-family: roboto-bold;
+  line-height: 30px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.jobSearchTitleDesc{
+  font-size: 14px;
+  color: #00000080;
+  margin-right: 8px;
+}
+.jobSearchTitleDescSpan{
+  font-size: 14px;
+  color: #000;
+  font-family: roboto-bold;
+}
+.jobboxBtn{
+  font-size: 18px;
+  font-family: roboto-bold;
+  padding: 11px 0px;
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  background: transparent linear-gradient(265deg, #69E4BE 0%, #2CE4E4 100%) 0% 0% no-repeat padding-box;
+  color: #fff;
+  text-align: center;
+  cursor: pointer;
+}
+.jobNewTitle{
+  color: #00A4E2;
+  font-size: 20px;
+  font-family: roboto-bold;
+  line-height: 30px;
+  margin-bottom: 8px;
+}
+.jobNewCompanyName{
+  color: #374957;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 25px;
+  font-family: roboto-bold;
+}
+.hirePilotFilterContainer{
+  background-color: #fff;
+  padding: 15px 20px;
+  border-radius: 8px;
+
+
+}
+.hirepilotRightTitleContainer {
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  border-radius: 10px;
+  padding: 18px 30px;
+  margin-bottom: 35px;
+}
+.hirepilotRightSubTitle {
+  font-size: 16px;
+  font-family: roboto-regular;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+.hirepilotRightFilterContainer {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.hirepilotItemMainContainer {
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.hirepilotItemContainer {
+  display: flex;
+  justify-content: space-between;
+}
+.hirepilotUserDetailsContainer {
+  display: flex;
+}
+.hirepilotUserProfession {
+  font-family: roboto-regular;
+  font-size: 14px;
+  line-height: 20px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+}
+.hirepilotUserLocation {
+  font-family: roboto-regular;
+  font-size: 13px;
+  line-height: 19px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+.hirepilotSalaryDetails {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hirepilotUserSkill {
+  font-family: roboto-regular;
+  font-size: 14px;
+  line-height: 20px;
+  padding: 3px 15px;
+  background: #f1f1f1;
+  border-radius: 13px;
+  display: inline-block;
+  margin: 0 10px 5px 0;
+}
+.hirepilotSalaryDetailsContainer {
+  text-align: center;
+  min-width: 280px;
+}
+.hirepilotUserImg {
+  min-width: 100px;
+  min-height: 100px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 20px;
+}
+.hirePitonBtn {
+  display: inline-block !important;
+  padding: 7px 19px !important;
+  background: transparent linear-gradient(290deg, #4ffea3, #00e7fc) 0 0
+    no-repeat padding-box !important;
+  border-radius: 23px !important;
+  border: 1px solid #00e7fc !important;
+  cursor: pointer !important;
+  font-family: roboto-regular !important;
+  font-size: 14px !important;
+  line-height: 19px !important;
+  color: #000 !important;
+  text-transform: capitalize !important;
+}
+.hirepilotSalaryBtnContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.hirepilotFilterHeaderTitle {
+  font-family: roboto-bold;
+  font-size: 20px;
+  line-height: 30px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid hsla(0, 0%, 43.9%, 0.2);
+  margin-bottom: 10px;
+}
+.hirepilotFilterClearLink {
+  font-size: 16px;
+  font-family: roboto-regular;
+  text-decoration: underline;
+  display: inline-block;
+  float: right;
+  cursor: pointer;
+}
+.hirePilotFilterTitle {
+  font-family: roboto-bold;
+  color: #00A4E2;
+  font-size: 16px;
+  line-height: 24px;
+  cursor: pointer;
+}
+.hirePilotFilterInput{
+  background: #EFF3F6;
+  padding: 11px 20px;
+  border: 0px;
+  font-size: 12px;
+  width: 100%;
+  margin-top: 8px;
+  margin-bottom: 37px;
+}
+.hirepilotFilterInputField{
+  display: block;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.hirePilotCheckboxLabel{
+  font-style: 14px;
+  color: #717171;
+  margin-left: 13px;
+}
+.hirepilotFilterRadio{
+  margin-right: 10px;
+}
+.hirepilotFilterInputFieldLabel {
+  font-family: roboto-regular;
+  font-size: 15px;
+  line-height: 22px;
+  margin-bottom: 15px;
+}
+@media only screen and (max-width: 600px) {
+  .hirepilotItemContainer {
+    display: block;
+  }
+  .hirepilotSalaryDetailsContainer {
+    display: block;
+    border-top: 1px solid #dcdcdc;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+  .hirepilotRightTitleContainer {
+    margin-bottom: 20px;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .hirepilotRightFilterInput2,
+  .hirepilotRightFilterBtn {
+    width: 49%;
+  }
+  .hirepilotRightFilterInput2 {
+    margin-right: 2%;
+  }
+  .hirepilotRightFilterInput1 {
+    margin-right: 0%;
+  }
+  .hirepilotItemContainer {
+    display: block;
+  }
+  .hirepilotSalaryDetailsContainer {
+    display: flex;
+    border-top: 1px solid #dcdcdc;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .hirepilotItemContainer {
+    display: flex;
+  }
+  .hirepilotSalaryDetailsContainer {
+    border-top: 0;
+    border-left: 1px solid #dcdcdc;
+    display: block;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .hirepilotItemContainer {
+    display: flex;
+  }
+  .hirepilotSalaryDetailsContainer {
+    border-top: 0 !important;
+    border-left: 1px solid #dcdcdc;
+    display: block;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .hirepilotRightFilterContainer {
+    display: flex;
+  }
+  .hirepilotRightFilterInput1,
+  .hirepilotRightFilterInput2,
+  .hirepilotRightFilterBtn {
+    flex: 1;
+  }
+  .hirepilotRightFilterInput2 {
+    margin-right: 2%;
+  }
+  .hirepilotRightFilterInput1 {
+    margin-right: 2%;
+  }
+  .hirepilotItemContainer {
+    display: flex;
+  }
+  .hirepilotSalaryDetailsContainer {
+    border-top: 0 !important;
+    border-left: 1px solid #dcdcdc;
+    display: block;
+  }
+}
+
+.hirepilotUserSkillsContainer{
+  margin: 10px 0px 0px 0px;
+  border-top: 1px solid #dcdcdc;
+  display: flex;
+}
+
+.skillsDronesTitle{
+  font-family: roboto-bold;
+  margin-right: 10px;
+  min-width: fit-content;
+}

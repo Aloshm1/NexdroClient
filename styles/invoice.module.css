@@ -1,0 +1,30 @@
+.cont{
+    margin-top: 50px;
+    max-width: 555px;
+    font-size: 12px;
+    padding: 20px 20px;
+}
+.imageDiv{
+    padding: 15px;
+    border: 1px solid gray;
+}
+.pdfInvoiceDiv{
+    border: 1px solid gray;
+    padding: 15px;
+}
+.title{
+    font-size: 12px;
+    font-family: roboto-bold;
+
+}.data{
+    font-size: 12px;
+    font-family: roboto-regular;
+    margin: 3px
+
+}
+.title1{
+    font-size: 12px;
+    font-family: roboto-bold;
+    padding-bottom: 3px;
+    border-bottom: 1px solid #e5e5e5;
+}

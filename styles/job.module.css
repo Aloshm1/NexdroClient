@@ -1,0 +1,723 @@
+
+.container{
+    max-width: 1150px;
+    margin: auto;
+}
+.jobShowTalentContainer{
+    background: #fff 0 0 no-repeat padding-box;
+    border-radius: 10px;
+    padding: 22px 45px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+.jobListingleftTitle{
+    font-family: roboto-bold;
+    font-size: 18px;
+    line-height: 26px;
+    margin-bottom: 6px;
+}
+.companyImageLink{
+    margin-right: 18px;
+}
+.jobListingleftTitle span, .companyImageLink span{
+    position: relative !important;
+}
+.companyImageLink{
+    height: 66px;
+    width: 66px;
+}
+.jobListingleftImage{
+    position: relative !important;
+    height: 100% !important;
+    width: 100% !important;
+}
+.jobboxLightDesc{
+    font-family: roboto-regular;
+    font-size: 13px;
+    line-height: 19px;
+    margin-bottom: 11px;
+}
+.jobboxBtn{
+    display: inline-block;
+    padding: 5px 16px;
+    background: transparent linear-gradient(290deg,#4ffea3,#00e7fc) 0 0 no-repeat padding-box;
+    border-radius: 23px;
+    border: 1px solid #00e7fc;
+    cursor: pointer;
+    font-family: roboto-regular;
+    font-size: 13px;
+    line-height: 19px;
+}
+.jobboxBtn:hover{
+    background: white;
+}
+.jobMainTitle{
+    font-family: roboto-bold;
+    font-size: 35px;
+    line-height: 51px;
+    margin-bottom: 10px;
+    color: #374957;
+}
+.jobMainTitle2{
+    font-size: 20px;
+    font-family: roboto-bold;
+    line-height: 30px;
+    margin-bottom: 53px;
+    text-align: center;
+    color: #374957;
+}
+.jobMainTitleNew{
+    font-family: roboto-bold;
+    font-size: 35px;
+    line-height: 51px;
+    margin-bottom: 10px;
+}
+.jobDetailsIcon{
+    margin-right: 15px;
+}
+.jobMainDesc{
+    font-size: 16px;
+    font-family: roboto-regular;
+    line-height: 24px;
+    margin-bottom: 10px;
+}
+.jobMainContainer{
+    padding: 25px 53px;
+    background: #00a6e30d;
+    border-radius: 10px;
+    margin-bottom: 16px;
+}
+.fBtn, .fBtn2 {
+    background-color: #e8e8e8;
+    width: fit-content;
+    margin-left: auto;
+    padding: 5px 20px;
+    border-radius: 20px;
+    border: 1px solid gray;
+    position: fixed;
+    top: 80px;
+    right: 15px;
+    display: flex;
+    align-items: center;
+    font-family: roboto-regular;
+    z-index: 999;
+    cursor: pointer;
+}
+.fBtn:hover{
+    background-color: #d8d8d8;
+}
+.fBtn2:hover{
+    background-color: #d8d8d8;
+}
+.jobNewImageContainer, .jobNewContainer{
+    display: flex;
+}
+.jobNewImageContainer{
+    width: fit-content;
+}
+.jobNewDetailsBtnContainer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.jobNewMainContainer{
+    width: 100%;
+}
+.jobNewApplyContainer{
+    margin-top: auto;
+    text-align: right;
+}
+.jobNewTitleCompanyName{
+    position: relative;
+}
+.jobMoreIcon{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    color: #2BC48A;
+    cursor: pointer;
+    font-size: 30px;
+}
+.jobNewContainer{
+    margin: 0px 20px 0px 20px;
+    padding: 20px 0px 20px 0px;
+    border-bottom: 1px solid #d5d5d5;
+}
+.jobNewApplyBtn{
+    font-size: 14px !important;
+    padding: 8px 33px !important;
+    background-color: #2BC48A !important;
+    font-family: "roboto-bold";
+}
+.jobNewTitle{
+    line-height: 25px;
+    margin-bottom: 5px;
+    font-size: 18px;
+    padding-right: 25px;
+}
+.jobNewCompanyName{
+    line-height: 20px;
+    margin-bottom: 10px;
+    color: #2BC48A;
+    font-size: 14px;
+}
+.jobNewDetails{
+    color: #777585;
+    font-size: 14px;
+    margin: 0px 0px 10px 0px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+}
+.jobNewPostedDate{
+    font-size: 11px;
+    line-height: 16px;
+    margin: 0px 0px 10px 0px;
+    color: #777585;
+}
+.jobNewOuterContainer{
+    background: #fff;
+    border-radius: 10px;
+    padding-bottom: 20px;
+}
+@media only screen and (min-width : 900px){
+    .fBtn{
+      display: none;
+    }
+    .fBtn2{
+        display: none;
+    }
+  }
+
+.jobBoxDate{
+    display: inline;
+    float: right;
+    font-family: roboto-bold;
+    font-size: 14px;
+    line-height: 25px;
+}
+.jobBoxTitle{
+    display: inline-block;
+    font-family: roboto-bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    color: #374957 !important;
+    text-align: left;
+}
+.jobBoxTitle1{
+    font-family: roboto-bold;
+    color: #374957 !important;
+    line-height: 25px;
+    margin-bottom: 6px;
+    font-size: 17px;
+}
+.jobBoxTitle1Bottom{
+    height: 2px;
+    background-color: #00a6e380;
+    width: 128px;
+    margin-bottom: 20px;
+}
+.jobApplyIconBtn{
+    background-color: #7070701a!important;
+}
+.jobApplyIcon{
+    font-size: 15px;
+}
+@media only screen and (max-width: 600px){
+    .jobBoxTitle{
+        font-size: 16px; 
+        line-height: 20px;
+        padding: 5px 0;
+    }
+    .fBtn, .fBtn2 {
+        top: 60px;
+    }
+    .jobMainTitle {
+        font-size: 20px;
+        line-height: 27px;
+    }
+    .jobMainTitleNew {
+        font-size: 20px;
+        line-height: 27px;
+    }
+    .jobCancel, .saveJob{
+        width: unset !important;
+        padding: 6px 8px !important;
+        margin-right: 10px !important;
+    }
+    .jobNewDetailsBtnContainer{
+        display: block;
+    }
+}
+
+.jobBoxCompanyName{
+    font-family: roboto-regular;
+    font-size: 14px;
+    cursor: pointer;
+    color: #717171;
+}
+
+.jobWorkType{
+    font-family: roboto-regular;
+    font-size: 13px;
+    line-height: 24px;
+    margin-bottom: 11px;
+    margin-left: 5px;
+}
+.jobBoxHr{
+    border: none;
+    height: 1px;
+    color: #333;
+    background-color: #d3d3d3;
+    margin: 5px 0 10px 0;
+}
+.jobLocationBtn{
+    display: flex;
+    align-items: center;
+    background: #f0f0f0;
+    padding: 6px 40px;
+    font-family: roboto-regular;
+    font-size: 16px;
+    line-height: 25px;
+    border-radius: 23px;
+    border: 1px solid #f0f0f0;
+    margin-right: 1rem;
+    width: fit-content;
+}
+.jobLocationBtn1{
+    width: fit-content;
+    display: inline;
+    align-items: center;
+    background: transparent linear-gradient(290deg,#4ffea3,#00e7fc) 0 0 no-repeat padding-box;
+    padding: 6px 40px;
+    font-family: roboto-bold;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 25px;
+    border-radius: 23px;
+    border: 1px solid #00e7fc;
+    margin-right: 1rem;
+}
+.jobLocationBtn1:hover{
+    background: white;
+}
+.jobButtons{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.jobBack{
+    font-family: roboto-regular;
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration: underline;
+    cursor: pointer;
+    margin: 20px 0px;
+    width: fit-content;
+    margin-left: auto;
+}
+.jobBack:hover{
+    color: #00e7fc;
+}
+.jobApplyNow{
+    font-family: roboto-bold;
+    font-size: 14px;
+    line-height: 20px;
+    cursor: pointer;
+    padding: 7px 15px;
+    background: transparent linear-gradient(270deg, #69E4BE 0%, #2CE4E4 100%) 0% 0% no-repeat padding-box;
+    border-radius: 4px;
+    margin-right: 30px;
+}
+.jobApplyNow1{
+    font-family: roboto-bold;
+    font-size: 14px;
+    line-height: 20px;
+    cursor: pointer;
+    padding: 5px 20px;
+    background: transparent linear-gradient(290deg,#4ffea3,#00e7fc) 0 0 no-repeat padding-box;
+    border-radius: 23px;
+    border: 1px solid #00e7fc;
+    margin-right: 20px;
+    height: fit-content;
+    margin-top: 30px;
+}
+.jobRightBarTitle{
+    font-size: 16px;
+    font-family: roboto-bold;
+    line-height: 24px;
+    margin-bottom: 11px;
+    color: #374957;
+}
+.jobLeftBarDesc{
+    font-size: 15px;
+    font-family: roboto-regular;
+    line-height: 19px;
+    margin-bottom: 25px;
+    color: #717171;
+}
+.jobLeftBarDesc p{
+    color: #717171;
+}
+.jobRightBarDesc{
+    font-size: 14px;
+    font-family: roboto-bold;
+    line-height: 20px;
+    margin-bottom: 30px;
+    color: #717171;
+}
+.search{
+    padding: 9px 0;
+    background: #00e7fc;
+    border-radius: 5px;
+    border: 1px solid #00e7fc;
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    font-family: roboto-bold;
+    font-size: 14px;
+    line-height: 20px;
+    cursor: pointer;
+}
+.search:hover, .search:focus{
+    background: #fff;
+    border: 1px solid #00e7fc;
+}
+.nav{
+    height: 50px;
+    padding-top: 15px;
+    padding-bottom: 12px;
+    box-shadow: 0 0 5px rgb(0 0 0 / 10%);
+}
+.navContent{
+    display: flex;
+    align-items: center;
+}
+.navTitle{
+    font-family: roboto-regular;
+    font-size: 18px;
+    margin-right: 50px;
+    cursor: pointer;
+}
+.navTitleActive{
+    font-family: roboto-bold;
+    font-size: 18px;
+    margin-right: 50px;
+    color:#00e7fc;
+    cursor: pointer;
+}
+.jobSpan{
+    font-family: roboto-regular;
+    font-size: 14px;
+    line-height: 20px;
+    margin-left:  5px;
+    margin-bottom: 10px;
+}
+.jobCancel{
+    border-radius: 23px;
+    border: 1px solid #e8e8e8;
+    background: #fff;
+    width: 146px;
+    font-size: 16px;
+    text-align: center;
+    font-family: roboto-regular;
+    line-height: 24px;
+    padding: 10px 0;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.saveJob{
+    background: transparent linear-gradient(292deg,#4ffea3,#00e7fc) 0 0 no-repeat padding-box;
+    border-radius: 23px;
+    border: 1px solid #e8e8e8;
+    width: 146px;
+    font-size: 16px;
+    text-align: center;
+    font-family: roboto-regular;
+    line-height: 24px;
+    padding: 10px 0;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.applicationContainer{
+    padding: 20px;
+    background-color: #fbfbfb;
+    border: 1px solid #e8e8e8;
+    border-radius: 10px;
+}
+.suggestedBtn{
+    background-color: #00e7fc;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 14px;
+    font-family: roboto-regular;
+    line-height: 20px;
+    display: inline-block;
+    float: right;
+    margin: 0px 10px;
+}
+.companyJobTitle{
+    text-align: center;
+    display: block;
+    font-size: 30px;
+    margin-bottom: 30px;
+    padding-top: 20px;
+    font-family: roboto-bold;
+}
+.jobBoxTitleContainer{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+}
+.saveShareContainer{
+    display: flex;
+    min-width: fit-content;
+}
+.saveBtn, .shareBtn{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.saveBtn:hover, .shareBtn:hover{
+    color: #00e7fc;
+}
+.companyDetailsContainer{
+    display: flex;
+    justify-content: space-between;
+}
+.companyImageNameContainer{
+    display: flex;
+    align-items: center;
+}
+.jobDetailsContainer1{
+    display: flex;
+}
+.companyImage{
+    height: 66px !important;
+    width: 66px !important;
+    object-fit: cover;
+    border-radius: 5px !important;
+    position: relative !important;
+}
+.companyName {
+    color: #000;
+    font-family: roboto-bold;
+}
+.companyName:hover {
+    color: #00e7fc;
+}
+.pilotWorkType, .locationName{
+    color: #757575;
+} 
+.locationName {
+    font-size: 12px;
+}
+.pilotWorkType{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.jobDetailsContainer2{
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #c5c5c5;
+    display: flex;
+    flex-wrap: wrap;
+}
+.detailBtn{
+    display: inline-block;
+    align-items: center;
+    background: #f0f0f0;
+    padding: 2px 10px;
+    font-family: roboto-regular;
+    font-size: 12px;
+    line-height: 25px;
+    border-radius: 23px;
+    border: 1px solid #f0f0f0;
+    margin: 0px 1rem 5px 0px;
+    min-width: fit-content;
+}
+.detailLink{
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+.detailLink:hover{
+    color: #00e7fc;
+}
+.jobContainer{
+    padding: 30px 0px;
+}
+
+@media only screen and (max-width: 1100px){
+    .jobLocationBtn{
+        padding: 6px 20px;
+    }
+    .jobLocationBtn1{
+        padding: 6px 20px;
+    }
+  }
+  @media only screen and (max-width: 661px){
+    .companyDetailsContainer{
+        display: block;
+    }
+    .pilotWorkType1{
+        margin-left: 0px;
+    }
+    .jobLocationBtn{
+        padding: 6px 15px;
+    }
+    .jobLocationBtn1{
+        padding: 6px 15px;
+    }
+    .jobApplyNow{
+        padding: 5px 15px;
+        background: transparent linear-gradient(270deg, #69E4BE 0%, #2CE4E4 100%) 0% 0% no-repeat padding-box;
+        border-radius: 23px;
+        margin-right: 8px;
+    }
+    .jobApplyShare{
+        margin-left: calc(100% - 165px);
+    }
+  }
+  @media only screen and (max-width: 600px){
+    .saveShareContainer{
+        display: flex;
+        justify-content: right;
+    }
+    .jobBoxTitleContainer{
+        display: block;
+    }
+    .shareBtn{
+        display: inline-block;
+    }
+    .jobLocationBtn{
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        background: #f0f0f0;
+        padding: 6px 10px;
+        width: 45%;
+    }
+    .jobLocationBtn1{
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 6px 10px;
+       margin-top: 10px;
+       width: 75%
+    }
+    .jobButtons{
+        display: contents;
+    }
+    .jobContainer{
+        padding: 20px 0 10px 0;
+    }
+    .jobBack{
+        margin: 0 0 20px auto;
+    }
+    .jobDesc {
+        margin-top: 25px !important;
+    }
+  }
+  @media only screen and (max-width: 440px){
+  
+    .jobLocationBtn{
+        margin-top: 10px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        background: #f0f0f0;
+        padding: 6px 10px;
+        width: 90%;
+    }
+    .jobLocationBtn1{
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding: 6px 10px;
+       margin-top: 10px;
+       width: 75%
+    }
+    .jobButtons{
+        display: contents;
+    }
+
+  }
+   @media only screen and (min-width: 600px) {
+    .jobHeadBox{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+  }
+  }
+  @media only screen and (max-width: 600px) {
+    .detailBtn{
+        padding: 0px 5px;
+        line-height: 20px;
+    }
+  }
+
+  .subscribeInput {
+    margin: 10px 20px;
+    width: calc(100% - 40px);
+    height: 40px;
+    border-radius: 20px;
+    padding-left: 10px;
+    border: 1px solid #e5e5e5;
+  }
+  .subscribeInput:hover {
+   
+    border: 1px solid #4ffea3;
+  }
+  .subscribeInput:focus {
+   
+    outline: 1px solid #4ffea3;
+  }
+  .subscribeBtn{
+    background-color: #4ffea3;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    font-family: roboto-regular;
+    cursor: pointer;
+  }
+
+
+  .ujBadge{
+    position: absolute;
+    top: 0px;
+    right: -4px;
+    font-size: 10px;
+    font-family: roboto-regular;
+  }
+
+  .ceMainDiv{
+    background-color: rgb(250 250 250);
+    padding: 20px;
+    border: solid 1px #d6d6d6;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  .filterSelect{
+    display: block;
+    width: fit-content;
+    height: 25px;
+    width: 100px;
+   margin-top: 20px;
+   margin-bottom: 10px;
+    margin-left: auto;
+    border-radius: 5px;
+    outline: 1px solid #e5e5e5;
+    font-size: 16px;
+    font-family: roboto-regular;
+  }

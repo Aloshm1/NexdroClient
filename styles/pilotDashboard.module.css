@@ -1,0 +1,437 @@
+.coverImage {
+  width: 100%;
+  border-radius: 10px;
+}
+.imageLoderDIv {
+  position: absolute;
+  right: 10%;
+  bottom: -75px;
+  height: 150px;
+  width: 150px;
+  border-radius: 75px;
+}
+.profileImage {
+  border-radius: 75px;
+  border: 2px solid #fff;
+  height: 100%;
+  width: 100%;
+}
+.coverEdit {
+  position: absolute;
+  padding: 5px;
+  background-color: #00e7fc;
+  border-radius: 17.5px;
+  font-size: 35px;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+.profileEdit {
+  position: absolute;
+  padding: 5px;
+  background-color: #00e7fc;
+  border-radius: 17.5px;
+  font-size: 30px;
+  top: 15px;
+  right: 17%;
+  cursor: pointer;
+}
+/* 
+.profileEdit2{
+  bottom: 15px!important;
+  right: 40%;
+} */
+.heading {
+  font-family: roboto-bold;
+  font-size: 30px;
+  padding-top: 30px;
+  line-height: 44px;
+  margin-bottom: 10px;
+}
+.subHead {
+  font-size: 14px;
+  letter-spacing: 0;
+  font-family: roboto-regular;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.shareBtn {
+  background-color: #e5e5e5 !important;
+  display: inline-flex !important;
+  padding: 5px 10px !important;
+  border-radius: 5px !important;
+  border: 1px solid #e7e7e7 !important;
+  cursor: pointer !important;
+  justify-content: center;
+  align-items: center;
+}
+
+.shareBtn:hover {
+  background-color: #fff !important;
+}
+
+.editButton {
+  display: inline;
+  float: right;
+  font-family: roboto-regular;
+  font-size: 16px;
+  line-height: 24px;
+  padding: 3px 25px;
+  background-color: #00e7fc;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
+.saveBtn {
+  display: inline-block;
+  padding: 13px 26px;
+  font-family: roboto-regular;
+  font-size: 16px;
+  line-height: 24px;
+  border-radius: 30px;
+  border: none;
+  background: transparent linear-gradient(290deg, #4ffea3, #00e7fc) 0 0;
+  cursor: pointer;
+}
+.starIcon {
+  float: right;
+  font-size: 50px;
+  color: gold;
+  border: 1px solid black;
+  border-radius: 25px;
+  cursor: pointer;
+}
+.centerProfile {
+  height: 35px;
+  width: 35px;
+  border-radius: 17.5px;
+}
+.centerName {
+  font-size: 22px;
+  margin-left: 10px;
+  font-family: roboto-regular;
+}
+.cardTitle {
+  font-size: 16px;
+  font-family: roboto-bold;
+  margin-bottom: 5px;
+}
+.cardDesc {
+  font-size: 16px;
+  font-family: roboto-regular;
+  margin-bottom: 10px;
+}
+.HideTitle {
+  text-align: center;
+  font-family: roboto-regular;
+  font-size: 30px;
+}
+.hideBtn {
+  margin-top: 20px;
+  height: 35px;
+  background-color: rgb(79, 254, 163);
+  padding: 5px 20px;
+  display: inline-block;
+  border-radius: 20px;
+  font-family: roboto-regular;
+  font-size: 16px;
+  border: 1px solid rgb(79, 254, 163);
+  cursor: pointer;
+}
+.followingHead {
+  font-family: roboto-bold;
+  font-size: 20px;
+  line-height: 30px;
+  margin-top: 12.5px;
+  margin-bottom: 15px;
+}
+.followingHr {
+  border: 0;
+  border-bottom: 1px solid #d3d3d3;
+}
+.pilotPic {
+  height: 75px;
+  width: 75px;
+  border-radius: 40px;
+}
+.pilotType {
+  font-family: roboto-regular;
+  font-size: 15px;
+  line-height: 22px;
+}
+.viewProfile {
+  font-family: roboto-regular;
+  font-size: 16px;
+  line-height: 24px;
+  cursor: pointer;
+  align-items: center;
+  text-align: center;
+  padding: 5px 55px;
+  background-color: #4ffea3;
+  border-radius: 20px;
+  border: none;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  display: inline-block;
+}
+.unfollow {
+  font-family: roboto-regular;
+  font-size: 16px;
+  line-height: 24px;
+  cursor: pointer;
+  text-decoration: underline;
+  text-align: center;
+}
+.subsContainer {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  width: 100%;
+  position: relative;
+}
+.subscriptionStatus {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  background-color: green;
+  color: white;
+  padding: 3px 10px 5px 10px;
+  border-top-right-radius: 10px;
+  font-size: 13px;
+}
+.planName {
+  text-align: center;
+  font-family: roboto-bold;
+  text-transform: capitalize;
+  font-size: 24px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid gray;
+  margin-bottom: 10px;
+}
+.planTitle {
+  font-family: roboto-bold;
+  font-size: 13px;
+  margin-top: 5px;
+}
+.planData {
+  margin-left: 10px;
+  font-size: 13px;
+  font-family: roboto-regular;
+  display: inline-block;
+}
+.cardDetails {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+.cardNumber {
+  font-size: 13px;
+  font-family: roboto-bold;
+  margin-bottom: 5px;
+}
+.cardExpDate {
+  font-size: 13px;
+  color: #858585;
+}
+.carcImg {
+  height: 25px;
+  border: 1px solid #c5c5c5;
+  margin-right: 10px;
+  padding: 2px 5px;
+  border-radius: 3px;
+}
+.cancelSubs {
+  background-color: #aaf8ff;
+  border: 1px solid #9cf7ff;
+  border-radius: 25px;
+  margin: 10px;
+  padding: 10px 20px;
+  text-align: center;
+  cursor: pointer;
+  align-self: flex-end;
+  margin: 0px 10px 10px 10px;
+}
+.PlanName {
+  font-family: roboto-bold;
+  font-size: 16px;
+  margin: 5px 0px;
+}
+.planSpan{
+    font-family: roboto-regular;
+    font-size: 16px;
+    /* margin-left: 5px; */
+
+}
+.upgradeBTN {
+  margin: 0px 10px 10px 10px;
+  padding: 10px 20px;
+  background-color: #4ffea3;
+  border: 1px solid #4ffea3;
+  border-radius: 20px;
+  cursor: pointer;
+  display: inline-block;
+  align-self: flex-end;
+}
+@media only screen and (max-width: 600px) {
+  .heading{
+    font-size: 20px;
+  }
+  .profileImage {
+    position: absolute;
+    right: -14px;
+    bottom: 31px;
+    border-radius: 75px;
+    border: 2px solid #fff;
+  }
+  .imageLoderDIv{
+    height: 80px;
+    width: 80px;
+  }
+  .viewProfile {
+    padding: 2px 5px;
+  }
+  .saveBtn {
+    padding: 6px 15px;
+  }
+  .cancelSubs {
+    padding: 6px 15px;
+  }
+  .transaction {
+    margin-top: 20px !important;
+  }
+  .profileEdit {
+    font-size: 20px;
+  }
+  .coverEdit {
+    font-size: 25px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  .viewProfile {
+    padding: 5px 20px;
+  }
+}
+.popupBorderBox {
+  border: 2px solid #000;
+  border-radius: 3px;
+  padding: 8px;
+  position: relative;
+}
+.popupTitleBooster {
+  margin: 20px auto 60px auto;
+  font-size: 16px;
+  font-family: roboto-regular;
+  height: 60px;
+}
+.popupBtnBooster {
+  text-align: center;
+  font-family: roboto-bold;
+  font-size: 14px;
+  background: transparent linear-gradient(180deg, #00e7fc, #4ffea3) 0 0
+    no-repeat padding-box;
+  padding: 10px 10px;
+  width: fit-content;
+  margin: auto;
+  border-radius: 30px;
+  cursor: pointer;
+  position: absolute;
+  bottom: 15px;
+  width: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.popupFreeBooster{
+    position: absolute;
+    top:0px;
+    right: 0px;
+    padding: 0px 7px;
+    background-color: rgb(156 237 156);
+    font-family: roboto-regular;
+}
+
+.mainBox{
+  border-radius: 10px;
+  box-shadow: 0 0 3px rgb(0 0 0 / 24%);
+  padding: 10px;
+  border: 1px solid #d0d0d0;
+}
+.bCoverPic{
+  width: 100%;
+  height: 70px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+.bProfilePic{
+  position: absolute;
+  top: 40px;
+  left: calc(50% - 30px);
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  border: 2px solid #f2f2f2;
+  background-color: #fff;
+  cursor: pointer;
+}
+.bIcon{
+  position: absolute;
+  bottom: -29px;
+  right: 0px;
+  cursor: pointer;
+  color: #515151;
+  font-size: 25px !important;
+}
+.name{
+  font-family: roboto-bold;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+}
+.location{
+  text-align: center;
+    font-family: roboto-regular;
+    font-size: 12px;
+    color: #757575;
+    margin: 3px auto;
+}
+.viewBtn{
+  font-size: 12px;
+  font-family: roboto-bold;
+  border: 2px solid;
+  padding: 5px 15px;
+  margin-top: 10px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  width: fit-content;
+}
+.viewBtn:hover{
+  border: 2px solid #00e7fc
+}
+.popupBtnBottom{
+  position: absolute; 
+  bottom: 8px; 
+  left: 0; 
+  right: 0;
+}
+.profileImgContainer{
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  bottom: -25px;
+  right: 20px;
+  border-radius: 40px;
+  cursor: pointer;
+  overflow: hidden;
+  border: 2px solid #fff;
+}
+.profileImg{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}

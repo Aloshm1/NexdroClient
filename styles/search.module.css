@@ -1,0 +1,132 @@
+.nav {
+  background-color: #F8FAFB;
+  z-index: 900;
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+.navContainer{
+  max-width: 550px;
+  position: relative;
+  margin: auto;
+}
+.searchInput{
+  font-style: 16px;
+  padding: 17px 50px 17px 30px;
+  color: #717171;
+  border-radius: 30px;
+  border: 0px;
+  width: 100%;
+}
+.searchIcon{
+  position: absolute;
+  right: 10px;
+  top: 9px;
+  background-color: #12E4B2;
+  color: #fff;
+}
+.searchIcon:hover{
+  background-color: #51f8d1;
+}
+.searchIconInner{
+  font-size: 16px;
+}
+.title {
+  font-family: roboto-bold;
+  text-transform: capitalize;
+  font-size: 24px;
+}
+.similarSearchContainer{
+  position: relative;
+  width: 80%;
+  margin: auto;
+}
+@media only screen and (max-width: 900px) {
+  .title {
+    font-size: 20px;
+  }
+  .similarSearchContainer{
+    width: 100%;
+  }
+}
+.dropDown {
+  height: 30px;
+  padding: 0px 10px;
+  border: 1px solid #b5b5b5;
+  border-radius: 5px;
+}
+.dropDown:hover,
+.dropDown:focus {
+  outline: 1px solid #4ffea3 !important;
+}
+.option {
+  font-family: roboto-regular;
+}
+.similar {
+  font-family: roboto-bold;
+  font-size: 16px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.tags {
+  overflow-x: auto;
+  width: calc(100% - 80px);
+  margin: auto;
+  white-space: nowrap;
+  display: flex;
+  margin-bottom: 20px;
+}
+.tag {
+  font-size: 14px;
+  padding: 5px 20px;
+  margin: 0px 7px;
+  border-radius: 20px;
+  color: #000;
+  display: flex;
+  cursor: pointer;
+  background: #7070701a;
+  font-family: roboto-regular;
+}
+.tagText {
+  margin-left: 5px;
+}
+.tags::-webkit-scrollbar {
+  height: 2px; /* width of the entire scrollbar */
+  display: none;
+}
+
+.tags::-webkit-scrollbar-thumb {
+  border-radius: 2px; /* roundness of the scroll thumb */
+  border: 1px solid #e5e5e5;
+  background-color: #e5e5e5;
+}
+.leftarrrow {
+  position: absolute;
+  font-size: 40px !important;
+  top: calc(50% - 20px);
+  left: 0px;
+  border-radius: 30px;
+  background-color: #00a4e21a;
+  color: #2bc48a;
+  /* border-radius: 10px; */
+  cursor: pointer;
+  ;
+}
+.rightarrow {
+  position: absolute;
+  font-size: 40px !important;
+  top: calc(50% - 20px);
+  right: 0px;
+  border-radius: 30px;
+  background-color: #00a4e21a;
+  color: #2bc48a;
+  /* border-radius: 10px; */
+  cursor: pointer;
+}
+.noImages {
+  text-align: center;
+  font-family: roboto-regular;
+  font-size: 16px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  color: rgb(152, 152, 152);
+}

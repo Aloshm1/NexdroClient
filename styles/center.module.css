@@ -1,0 +1,473 @@
+.centerTitleContainer{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-family: roboto-bold;
+    margin-bottom: 11px;
+}
+.bookmarkBtn{
+    background-color: #e5e5e5;
+    display: flex;
+    align-items: center;
+    padding: 5px 20px;
+    border-radius: 5px;
+    border: 1px solid #e7e7e7;
+    cursor: pointer;
+    font-family: roboto-regular;
+}
+.bookmarkBtn:not(:last-child){
+  margin-right: 15px;
+}
+.bookmarkShareIcon{
+  text-align: right;
+  margin-top: 20px;
+  padding-right: 24px;
+}
+.enquireBtn{
+    background: linear-gradient(290deg, rgb(79, 254, 163) 0%, rgb(0, 231, 252) 100%) 0% 0% no-repeat padding-box padding-box transparent;
+    display: inline-flex;
+    padding: 5px 20px;
+    border-radius: 5px;
+    margin-right: 10px;
+    border: 1px solid #e7e7e7;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.enquireBtn2{
+  width: 100%;
+  font-size: 13px;
+  font-family: roboto-bold;
+  padding: 14px 0px;
+  background: #7171711a;
+  line-height: 16px;
+  color: #717171;
+  position: absolute;
+  bottom: 0;
+}
+.centerEnquireBtn{
+  background: transparent linear-gradient(270deg, #69E4BE 0%, #2CE4E4 100%) 0% 0% no-repeat padding-box;
+  border-radius: 4px;
+  color: #374957;
+  line-height: 20px;
+  padding: 7px 15px;
+  font-family: roboto-bold;
+}
+.centerTitleEnquireContainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.centerItemContainer{
+  background-color: #fff;
+  border-radius: 10px;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 29px;
+}
+.centerTitle{
+  font-size: 24px;
+  color: #374957;
+  font-family: roboto-bold;
+}
+.centerItemContainer:hover .enquireBtn2{
+  background: transparent linear-gradient(270deg, #69E4BE 0%, #2CE4E4 100%) 0% 0% no-repeat padding-box;
+  color: #000;
+}
+.titleContainer{
+  display: flex;
+}
+.centerLocation{
+    font-size: 14px;
+    font-family: roboto-regular;
+    margin-bottom: 10px;
+    color: #717171;
+}
+.rightDiv{
+    background-color: #EFF3F6;
+    padding: 26px 36px 0px 36px;
+    margin-top: 50px;
+    border-radius: 5px;
+    position: sticky;
+    top: 70px;
+}
+.descTitle{
+  font-family: roboto-bold;
+  color: #374957;
+  font-size: 20px!important;
+  margin-right: 30px;
+}
+.detContainer{
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.rightDivTitle{
+  color: #00A4E2;
+  text-align: center;
+  font-size: 18px;
+  font-family: roboto-bold;
+  margin-bottom: 48px;
+}
+.descDesc{
+    font-size: 14px;
+    display: inline-block;
+    font-family: roboto-bold;
+    color: #374957;
+}
+.subHeading{
+    font-size: 18px;
+    font-family: roboto-bold;
+    color: #374957;
+    border-bottom: 2px solid #00a4e280;
+    line-height: 26px;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+    width: fit-content;
+}
+.description{
+  font-size: 14px;
+  font-family: roboto-regular;
+  color: #717171;
+  margin-bottom: 50px;
+}
+.brand{
+  background: #fff;
+  border: 1px solid #70707080;
+  color: #374957;
+  font-size: 14px;
+  padding: 5px 18px;
+  font-family: roboto-bold;
+  font-weight: 600;
+  line-height: 20px;
+  margin-right: 20px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.writeReview{
+    color: #041d1f!important;
+    background: transparent linear-gradient(121deg,#00e7fc,#4ffea3) 0 0 no-repeat padding-box;
+    border-radius: 25px!important;
+    font-family: roboto-bold;
+    border: 1px solid #00fcef;
+    box-shadow: none!important;
+    text-transform: none!important;
+    outline: none;
+    padding: 5px 25px;
+    font-size: 15px;
+    cursor: pointer;
+    float: right;
+}
+.writeReview:focus, .writeReview:hover {
+    background: #00e7fc;
+}
+.coverPic{
+    width: 100%;
+}
+.centerDetailsContainer1{
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 0px 2px #00000029;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 50px;
+}
+.centerDetailsContainer2{
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  box-shadow: 0px 0px 2px #00000029;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 34px 43px;
+  margin-top: 20px;
+}
+.centerDetailsInnerContainer1{
+  padding: 0px 24px 36px 44px;
+}
+.overLay{
+    position: absolute;
+    height: 100%;
+    bottom: 5px;
+    width: 100%;
+    background-image: linear-gradient(#000000cf, #ffffff00, #00000014);
+}
+.profilePic{
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+
+.popupImages{
+    height: 300px;
+    width: 400px;
+    object-fit: cover;
+}
+.profilePicImgContainer{
+  margin-top: -120px;
+  width: 124px;
+  border-radius: 50%;
+  position: relative;
+  border: 2px solid #fff;
+}
+.centerCoverPic{
+  width: 100%;
+  border-radius: 10px 10px 0px 0px;
+  min-height: 170px;
+  object-fit: cover;
+}
+
+@media only screen and (max-width: 1000px){
+  .profilePicImgContainer{
+    width: 100px;
+    margin-top: -110px;
+  }
+    .coverPic{
+        width: 100%;
+        min-height: 120px;
+    }
+        .bookmarkBtn{
+            padding: 3px 5px;
+            margin-right: 5px;
+        }
+        .enquireBtn{
+            margin-right: 5px;
+            padding: 3px 5px;
+         
+        }
+        .centerTitleContainer{
+            text-transform: capitalize;
+            font-size: 18px;
+            font-family: roboto-bold;
+            margin-bottom: 11px;
+            display: flex;
+            align-items: center;
+        }
+        .centerLocation{
+            font-size: 14px;
+            font-family: roboto-bold;
+            margin-bottom: 10px;
+        }
+        .rightDiv{
+            margin-top: 4px;
+        }
+        .descDesc{
+            font-size: 14px;
+            display: inline-block;
+            margin-bottom: 5px;
+            font-family:roboto-regular;
+        }
+        .popupImages{
+            height: auto;
+            width: 100%;
+        }
+  }
+  @media only screen and (max-width: 575px){
+    .profilePicImgContainer{
+      width: 75px !important;
+      margin-top: -95px;
+    }
+  }
+  .suggestedBrandsDiv{
+    position: absolute;
+    top: 40px;
+    width: 100%;
+    max-height: 150px;
+    background-color: #fff;
+    overflow-y: scroll;
+    border: 1px solid #e5e5e5;
+    border-radius: 0px 0px 7px 7px;
+  }
+  .brandName{
+    display: block;
+    padding: 10px;
+    border-bottom: 1px solid #e5e5e5;
+    cursor: pointer;
+  }
+  .brandName:hover{
+    background-color: #e5e5e5;
+  }
+  .ceMainDiv{
+    background-color: rgb(250 250 250);
+    padding: 20px;
+    border: solid 1px #d6d6d6;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  .ceTitle{
+    font-size: 13px;
+    font-family: roboto-regular;
+    color: #8f8f8f;
+    margin-bottom: 3px;
+  }
+  .ceDesc{
+    font-size: 14px;
+    font-family: roboto-regular;
+    margin-bottom: 3px;
+  }
+  .ceBadge{
+    position: absolute;
+    right: -10px;
+    top: 0px;
+    font-size: 10px;
+    font-family: roboto-regular;
+  }
+  .ceBadge1{
+    position: absolute;
+    right: -4px;
+    top: 0px;
+    font-size: 10px;
+    font-family: roboto-regular;
+  }
+  .ceClosedBtn{
+    color: #fff;
+    background-color: #ff6060;
+    font-family: roboto-bold;
+    font-size: 12px;
+    border-radius: 5px;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  .cePendingBtn{
+    color: #fff;
+    background-color: #545fff;
+    font-family: roboto-bold;
+    font-size: 12px;
+    border-radius: 5px;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  .ceCanceledBtn{
+    color: #fff;
+    background-color: #4fa711;
+    font-family: roboto-bold;
+    font-size: 12px;
+    border-radius: 5px;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  .sugMain{
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: rgb(0 0 0 / 24%) 0px 0px 3px;
+    padding: 10px;
+    border: solid 1px #d0d0d0;
+  }
+  .sugCoverPic{
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+  }
+  .centerFilter{
+    width: 80%;
+    border-radius: 10px;
+    margin: 0px auto 0px auto;
+  }
+  .centerFilterContainer{
+    background-color: hsla(196, 100%, 44%, 0.05);
+    padding: 22px 0px;
+  }
+  .profilePicContainer{
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    bottom: -40px;
+    right: calc(50% - 40px);
+    border-radius: 40px;
+    cursor: pointer;
+    overflow: hidden;
+    border: 5px solid #fff;
+  }
+  .profilePicImg{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    background: #c5c5c5;
+  }
+  .sugProfilePic{
+    position: absolute;
+    bottom: -20px;
+    left: calc(50% - 30px);
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+    border: 2px solid #f2f2f2;
+    background-color: #fff;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  .sugProfilePicImg{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  .sugName{
+    font-family: roboto-bold;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+  }
+  .sugCity{
+    text-align: center;
+    font-family: roboto-regular;
+    font-size: 12px;
+    color: #757575;
+    margin: 3px auto;
+  }
+  .sugViewProfile{
+    font-size: 12px;
+    font-family: roboto-bold;
+    border: solid 2px;
+    padding: 5px 15px;
+    margin-top: 10px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    cursor: pointer;
+  }
+  .sugViewProfile:hover{
+    border: 2px solid #00e7fc;
+  }
+  .sugDesc{
+    font-family: roboto-bold;
+    text-align: center;
+    font-size: 14px;
+  }
+  .widthBox{
+    border-right: solid 1px #bfbfbf;
+    width: 33%;
+  }
+  .sugTitle{
+    font-family: roboto-bold;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .unFollow{
+    text-align: right;
+    color: #656565 !important;
+    cursor: pointer;
+  }
+  @media only screen and (max-width: 600px){
+    .centerFilter{
+      width: 100%;
+    }
+    .ceDesc{
+      margin-bottom: 10px;
+    }
+    
+.serviceCenter {
+  padding-top: 50px !important;
+  padding-bottom: 50px !important;
+}
+  }

@@ -1,0 +1,213 @@
+.leftDiv{
+    box-shadow: rgb(0 0 0 / 8%) 0px 3px 2px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+.coverPic {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.profilePic {
+  height: 150px;
+  width: 150px;
+  border-radius: 75px;
+  border: 5px solid #fff;
+  overflow: hidden;
+  margin-top: -70px;
+}
+.bookmark{
+    font-size: 25px !important;
+    position: absolute;
+    bottom: 10px;
+    right: 9px;
+    cursor: pointer;
+}
+.nameDiv {
+  margin-top: 10px;
+}
+.profilePicNameContainer{
+    display: flex;
+    flex-wrap: wrap;
+}
+.companyName {
+  font-family: roboto-bold;
+
+  font-size: 22px;
+}
+.industry {
+  font-family: roboto-regular;
+  font-size: 16px;
+  color: #5e5e5e;
+}
+.country{
+    font-size: 14px;
+    font-family: roboto-bold;
+    padding: 3px 30px;
+    background-color: #f5f5f8;
+    border-radius: 2px;
+    width: fit-content;
+    margin-top: 10px;
+    border: 1px solid #e5e5e5;
+}
+.rightDiv{
+    padding: 15px;
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.add{
+    font-family: roboto-bold;
+    margin-bottom: 10px;
+}
+.rightHead{
+    font-size: 14px;
+    font-family: roboto-bold;
+    color: #909090;
+    margin-bottom: 1px;
+
+}
+.rightDesc{
+    font-size: 14px;
+    font-family: roboto-regular;
+    margin-bottom: 5px;
+}
+.nav{
+    background-color: #f7f7fc;
+    padding: 7px 10px;
+    border-radius: 5px;
+    border: 1px solid #e8e8e8;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+.activeTab{
+    font-family: roboto-bold;
+    font-size: 14px;
+    text-align: center;
+    padding: 5px 10px;
+    background-color: #fff;
+    box-shadow: rgb(0 0 0 / 16%) 0px 3px 6px, rgb(0 0 0 / 23%) 0px 3px 6px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.tab{
+    font-family: roboto-bold;
+    font-size: 14px;
+    text-align: center;
+    padding: 5px 10px;
+    cursor: pointer;
+    color: #898989;
+    
+}
+.contentDiv{
+    padding: 20px;
+
+    border-radius: 10px;
+    border: 1px solid #e5e5e5;
+}
+.desc{
+    font-family: roboto-regular;
+    font-size: 15px;
+    color: #7d7d7d;
+    margin-bottom: 20px;
+}
+.jobDiv{
+    height: 100%;
+    border: 1px solid #e5e5e5;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+.jobPic{
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    margin-bottom: 10px;
+}
+.jobTitle{
+    font-family: roboto-bold;
+    font-size: 14px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+.jobCompany{
+    font-family: roboto-regular;
+    font-size: 12px;
+    color: #909090;
+    border-bottom: 5px;
+}
+.jobLocation{
+    font-family: roboto-regular;
+    font-size: 13px;
+}
+.viewJob{
+    width: fit-content;
+    margin-left: auto;
+    font-size: 12px;
+    font-family: roboto-bold;
+    border-radius: 20px;
+    border: 2px solid #000;
+    padding: 5px 15px;
+    cursor: pointer;
+}
+.viewJob:hover{
+    border: 2px solid #00e7fc;
+}
+.pageInfo{
+    font-family: roboto-bold;
+    font-size: 24px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #a5a5a5;
+    margin-bottom: 20px;
+}
+.viewProfile{
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 20px;
+    background-color: #00e7fc;
+    cursor: pointer;
+    font-family: roboto-bold;
+}
+.edit{
+    width: fit-content;
+    margin-left: auto;
+    font-family: roboto-regular;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 3px 25px;
+    background-color: #00e7fc;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+.save{
+    display: inline-block;
+    padding: 13px 26px;
+    font-family: roboto-regular;
+    font-size: 16px;
+    line-height: 24px;
+    border-radius: 30px;
+    border: none;
+    background: transparent linear-gradient(290deg, #4ffea3, #00e7fc) 0 0;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+.profilePic {
+    height: 80px;
+    width: 80px;
+    margin-top: -40px;
+  }
+  .companyName {
+    font-size: 18px;
+    line-height: 27px;
+  }
+  .industry {
+    font-size: 15px;
+  }
+  .save{
+    padding: 8px 16px;
+}
+}

@@ -1,0 +1,433 @@
+.pageContainer {
+  padding-top: 60px;
+}
+.headingContent {
+  text-align: center;
+  font-size: 16px;
+  font-family: roboto-regular;
+  line-height: 25px;
+  /* margin-bottom: 60px; */
+}
+.monthYearSelectContainer {
+  text-align: center;
+  font-family: roboto-bold;
+  font-size: 20px;
+  margin: 0 15px;
+}
+.plan1 {
+  border: 1px solid rgb(198, 198, 198);
+  padding: 27px 30px;
+  border-radius: 19px;
+}
+.plan2 {
+  background: transparent linear-gradient(209deg, #4ffea3, #00e7fc) 0 0
+    no-repeat padding-box;
+  border-radius: 19px;
+  padding: 27px 30px;
+}
+.planTitle {
+  font-family: roboto-bold;
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+.planDesc {
+  font-family: roboto-regular;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 15px;
+}
+.planPrice {
+  font-family: roboto-bold;
+  font-size: 30px;
+  line-height: 44px;
+  margin-bottom: 7px;
+}
+.planItems {
+  font-family: roboto-regular;
+  font-size: 14px;
+  line-height: 19px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+.tickIcon {
+  width: 2em!important;
+  height: 2em!important;
+  fill: #4ffea3!important;
+}
+.companyProHighlightsContainer{
+  border: 1px dashed #c5c5c5;
+  border-radius: 5px;
+  min-height: 200px;
+  display: flex;
+  padding: 10px;
+}
+.companyProHighlightsContainerGrid{
+  height: 100%;
+}
+.btnContainer {
+  text-align: center;
+}
+.btn1 {
+  background: transparent linear-gradient(73deg, #00e7fc, #4ffea3) 0 0 no-repeat
+    padding-box !important;
+  width: 215px !important;
+  text-align: center !important;
+  border: 0 !important;
+  padding: 8px 0 !important;
+  font-size: 16px !important;
+  font-family: roboto-regular !important;
+  line-height: 24px !important;
+  margin-bottom: 31px !important;
+  border-radius: 10px !important;
+  cursor: pointer !important;
+  text-transform: initial !important;
+  color: black !important;
+}
+.btn2 {
+  width: 215px !important;
+  text-align: center !important;
+  background: #fff !important;
+  border: 0 !important;
+  padding: 8px 0 !important;
+  font-size: 16px !important;
+  font-family: roboto-regular !important;
+  line-height: 24px !important;
+  margin-bottom: 31px !important;
+  border-radius: 10px !important;
+  cursor: pointer !important;
+  text-transform: initial !important;
+  color: black !important;
+}
+.btn1:hover {
+  background: transparent linear-gradient(73deg, #4ffea3, #00e7fc) 0 0 no-repeat
+    padding-box !important;
+}
+.btn2:hover {
+  background: rgb(238, 238, 238) !important;
+}
+
+.circle1 {
+  height: 26px;
+  width: 26px;
+  background: transparent linear-gradient(180deg, #4ffea3, #00e7fc) 0 0
+    no-repeat padding-box;
+  margin-bottom: 18px;
+  padding-left: 6px;
+  padding-top: 6px;
+  border-radius: 13px;
+}
+.circle2 {
+  height: 14px;
+  width: 14px;
+  background-color: #fff;
+  border-radius: 7px;
+}
+.circle3 {
+  height: 26px;
+  width: 26px;
+  background: white;
+  margin-bottom: 18px;
+  padding-left: 6px;
+  padding-top: 6px;
+  border-radius: 13px;
+}
+.circle4 {
+  height: 14px;
+  width: 14px;
+  background: transparent linear-gradient(180deg, #4ffea3, #00e7fc) 0 0
+  no-repeat padding-box;;
+  border-radius: 7px;
+}
+.popupSubtitle {
+  font-family: roboto-bold;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.popupFileTypeName{
+  font-family: roboto-regular;
+  font-size: 16px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 5px;
+  color: black;
+}
+.popupFileContainer{
+  width: 150px;
+  height: 120px;
+  margin: 5px;
+  display: inline-block;
+  position: relative;
+}
+.popupFile{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.popupDeleteIcon{
+  color: rgb(163, 0, 0);
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.336);
+  padding: 5px 5px 2px 5px;  
+  top: 0px;
+  right: 0px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.cont{
+  background: #fff 0 0 no-repeat padding-box;
+  border: 1px solid #e8e8e8;
+  border-radius: 10px;
+  padding: 17px 25px 21px;
+  margin-bottom: 42px;
+}
+.subsTitle{
+  font-family: roboto-bold;
+  font-weight: 600;
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+.subsDesc{
+  margin-left: 10px;
+    font-family: roboto-regular;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.midTitle{
+  margin: 5px 0;
+  font-family: roboto-bold;
+  font-size: 20px;
+  text-align: center;
+}
+.costTitle{
+  font-family: roboto-bold;
+  font-size: 18px;
+  display: inline;
+}
+.costValue{
+  float: right;
+  font-family: roboto-bold;
+  font-size: 18px;
+  display: inline;
+}
+.costCont{
+  margin-bottom: 10px;
+
+}
+.costLight{
+  font-family: roboto-regular;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+.costCheck{
+  font-size: 16px;
+  color: #000;
+  display: inline-block;
+  line-height: normal;
+  margin-left: 10px;
+  font-family: roboto-regular;
+}
+.contBtn{
+  padding: 13px 60px !important;
+    font-family: roboto-bold !important;
+    font-size: 16px !important;
+    line-height: 24px !important;
+    border-radius: 30px !important;
+    border: 1px solid #00e7fc !important;
+    cursor: pointer !important;
+    background: transparent linear-gradient(290deg,#4ffea3,#00e7fc) 0 0 !important;
+    margin: 30px 0 !important;
+    float: right !important;
+}
+.popupBtn1{
+  margin: 10px !important;
+  padding: 5px 20px !important;
+  background-color: #00e7fc !important;
+  border: 1px solid #00e7fc !important;
+  border-radius: 20px !important;
+  color: #000 !important;
+  text-transform: initial !important;
+}
+.popupBtn2{
+  margin: 10px !important;
+  padding: 5px 20px !important;
+  background-color: #4ffea3 !important;
+  border: 1px solid #4ffea3 !important;
+  border-radius: 20px !important;
+  color: #000 !important;
+  text-transform: initial !important;
+}
+.PaymentSuccessImageContainer{
+  text-align: center;
+}
+.subsDetailContainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin: 5px 0px;
+  border-radius: 5px;
+  align-items: center;
+}
+.subsDetailContainer div{
+  margin: 2px 9px;
+}
+.addonsPlanContainer{
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+#addonsPlanContainer1{
+  background: #7080FA url(https://static.pbcdn.in/cdn/images/home-v1/health-insurance-bg.png) right -1px top no-repeat;
+  background-size: contain;
+}
+#addonsPlanContainer2{
+  background: #4FDC95 url(https://static.pbcdn.in/cdn/images/home-v1/investment-plans-bg.png) right -1px top no-repeat;
+  background-size: cover;
+}
+#addonsPlanContainer3{
+  background: #3CBBDA url(https://static.pbcdn.in/cdn/images/home-v1/health-insurance-bg.png) right -1px top no-repeat;
+  background-size: contain;
+}
+#addonsPlanContainer4{
+  background: #FF9898 url(https://static.pbcdn.in/cdn/images/home-v1/investment-plans-bg.png) right -1px top no-repeat;
+  background-size: cover;
+}
+.addonsPrice{
+  font-family: roboto-bold;
+  font-size: 18px;
+}
+.companyProHighlights{
+  font-family: 'roboto-regular';
+  font-size: 14px;
+  line-height: 20px;
+}
+.companyProHighlights1{
+  font-family: 'roboto-regular';
+  font-size: 14px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+}
+.companyProPostJobContainer{
+  height: 100%;
+  border: 1px solid #c5c5c5;
+  padding: 12px 15px 5px 15px;
+  border-radius: 10px;
+  box-shadow: rgba(17, 17, 26, 0.226) 0px 0px 16px;
+}
+.companyProContent{
+  font-size: 21px;
+}
+
+.companyProTitle{
+  margin-bottom: 15px;
+  font-size: 35px;
+  line-height: initial;
+}.companyProDirectHireContainer{
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 20px;
+  align-items: center;
+}
+.companyProstepperContent{
+  color: rgb(75 75 75 / 80%);
+  font-size: 21px;
+  font-family: 'roboto-regular';
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 10px;
+}
+@media only screen and (max-width: 768px) {
+  .companyProstepperContent {
+    width: 100%;
+  }
+}
+.companyProDirectHireContent{
+  display: flex;
+  align-items: center;
+  font-family: roboto-regular;
+  font-size: 12px;
+}
+.addonsPriceAndBtn{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.addonsBtn{
+  padding: 3px 10px;
+  border: 2px solid white;
+  color: white;
+  font-family: roboto-bold;
+  text-transform: initial;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.addonsTitle{
+  margin-bottom: 10px;
+}
+.addonsTitle, .addonsPrice{
+  color: white;
+}
+.addonsDesc{
+  color: rgb(255, 224, 189);
+  margin: 0px 0px 10px 0px;
+}
+.testimonialsContainer{
+  margin-top: 100px;
+}
+.testimonialTitle{
+  color: #3d3d4e;
+  text-align: center;
+}
+.testimonialsUserContianer{
+  display: flex;
+  column-gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.testimonialsUserContianer p{
+  color: #3d3d4e;
+  margin: 5px 0px 0px 0px;
+}
+.testimonialsUserImg{
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  overflow: hidden;
+}
+.testimonialsUserImg img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.tipsToGetJobContainer{
+  border-left: solid 1px #e3e3e3;
+  padding-left: 20px;
+}
+@media only screen and (max-width: 600px) { 
+  .companyProTitle{
+    font-size: 20px;
+    padding-top: 15px;
+    margin-bottom: 0;
+  }
+  .companyProContent {
+    font-size: 15px;
+  }
+  .companyProstepperContent{
+    font-size: 18px;
+    width: 100%;
+  }
+}

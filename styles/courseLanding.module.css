@@ -1,0 +1,266 @@
+.courseLandingOuterContainer{
+  background: #F8FAFB;
+}
+.courseRightContainer{
+  border: 1px solid #9F9F9F80;
+  border-radius: 10px;
+  background: #FFFFFF;
+}
+.CourseRightSection{
+  padding: 25px;
+  border-bottom: 1px solid #9F9F9F80;
+}
+.courseLandingOuterContainer{
+  padding: 50px 0px;
+}
+.courseDiscountPrice{
+  font-size: 26px;
+  line-height: 40px;
+  margin-bottom: 15px;
+}
+.coursePrice{
+  line-height: 28px;
+  font-size: 14px;
+  color: #00000088;
+  margin-bottom: 25px;
+}
+.courseDiscount{
+  background: #00A4E2;
+  color: #fff;
+  padding: 5px 8px;
+  border-radius: 4px;
+  margin-left: 11px;
+}
+.courseChatEnquireBtn1, .courseChatEnquireBtn2{
+  width: 100%;
+  font-family: roboto-bold;
+  line-height: 20px;
+}
+.courseChatEnquireBtn1{
+  margin-bottom: 15px;
+  background-color: #2BC48A;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.courseChatEnquireBtn1:hover{
+  background-color: #2BC48A;
+}
+.courseChatEnquireBtn2{
+  border: 2px solid #00A4E2;
+  color: #00A4E2;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.courseChatEnquireBtn2:hover{
+  border: 2px solid #00A4E2;
+}
+.CourseRightTitle{
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 25px;
+}
+.courseIncludesContent{
+  display: flex;
+  align-items: center;
+  line-height: 20px;
+  margin-bottom: 14px;
+  margin-top: 0px;
+  color: #484848;
+}
+.mb_0{
+  margin-bottom: 0px !important;
+}
+.bb_0{
+  border-bottom: 0px;
+}
+.courseTestimonialContainer{
+  display: flex;
+  gap: 18px;
+  margin-bottom: 10px;
+}
+.courseTestimonialName{
+  margin: 0px;
+  font-size: 18px;
+  margin-bottom: 5px;
+  line-height: 25px;
+}
+.courseTestimonialrole{
+  font-size: 14px;
+  line-height: 21px;
+  margin-bottom: 12px;
+  margin-top: 0px;
+  font-family: roboto-bold;
+}
+.courseTestimonialImg{
+  border-radius: 5px;
+}
+.courseInstructorImg{
+  border-radius: 50%;
+}
+.courseInstructorImgContainer{
+  width: 80px;
+}
+.courseInstructorContainer{
+  display: flex;
+  gap: 18px;
+}
+.courseInstructorContainerContainer{
+  width: 100%;
+}
+.courseInstructorName{
+  font-size: 18px;
+  font-family: roboto-bold;
+  line-height: 25px;
+  margin-bottom: 5px;
+}
+.courseInstructorRole{
+  font-size: 14px;
+  color: #707070;
+  line-height: 20px;
+  margin: 0px;
+  margin-bottom: 30px;
+}
+.courseInstructorDescription{
+  font-size: 12px;
+  line-height: 18px;
+  color: #000;
+  margin: 0px;
+  margin-bottom: 20px;
+}
+.courseTestimonialRatingContainer{
+  display: flex;
+  align-items: center;
+}
+.courseRatingCount{
+  margin-left: 8px;
+  font-size: 12px;
+  font-family: roboto-bold;
+}
+.courseTitle{
+  margin-bottom: 23px;
+  margin-top: 0px;
+}
+.courseReviewsTag{
+  background: #F26E17;
+  font-size: 12px;
+  color: #FFFFFF;
+  padding: 5px 10px;
+  border-radius: 4px;
+  margin: 0px;
+}
+.courseReviewsContainer{
+  display: flex;
+  gap: 15px;
+  margin-bottom: 38px;
+}
+.courseShareAndDetailsContainer{
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.courseShareAndDetailsContentKey{
+  font-size: 12px;
+  color: #707070;
+  margin: 0px 0px 3px 0px;
+  line-height: 18px;
+  font-family: roboto-bold;
+}
+.courseShareAndDetailsContentValue{
+  font-size: 14px;
+  color: #000000;
+  margin: 0px;
+  line-height: 21px;
+  font-family: roboto-bold;
+}
+.courseShareAndDetailsContainer{
+  margin-bottom: 30px;
+}
+.courseShareAndDetailsContentBtn{
+  background-color: rgb(43 196 138 / 20%);
+  border: 0;
+  box-shadow: none;
+  color: #000;
+  font-size: 14px;
+  font-family: roboto-bold;
+  padding: 6px 12px;
+  text-transform: initial;
+}
+.courseShareAndDetailsContentBtn:hover{
+  background-color: rgb(43 196 138 / 20%);
+}
+.courseTabsContainer{
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(43 196 138 / 20%);
+  padding: 12px;
+  border-radius: 5px;
+  margin-bottom: 25px;
+}
+.courseTab{
+  margin: 0px;
+  font-size: 14px;
+  line-height: 21px;
+}
+.courseThumbnailContainer{
+  margin-bottom: 20px;
+}
+.courseTabContentContainer{
+  border: 1px solid #9F9F9F80;
+  border-radius: 10px;
+  padding: 22px 30px;
+  background-color: #fff;
+  margin-bottom: 30px;
+}
+.courseTabContentTitle{
+  font-size: 24px;
+  line-height: 35px;
+  margin: 0px;
+  margin-bottom: 17px;
+}
+.courseCertificateContainer span{
+  position: relative !important;
+  width: 100%;
+}
+.courseCertificateContainer span img{
+  position: relative !important;
+  height: initial !important;
+  width: 100% !important;
+  object-fit: contain;
+}
+.courseThumbnailContainer span{
+  position: relative !important;
+  width: 100%;
+}
+.courseThumbnailContainer span img{
+  position: relative !important;
+  height: initial !important;
+  width: 100% !important;
+  object-fit: contain;
+  border-radius: 10px;
+}
+.courseTabActive{
+  color: #2BC48A;
+  font-family: roboto-bold;
+}
+.reviewWriteReviewContainer{
+  display: flex;
+  justify-content: space-between;
+}
+.writeReview{
+  color: #041d1f!important;
+  background: transparent linear-gradient(121deg,#00e7fc,#4ffea3) 0 0 no-repeat padding-box;
+  border-radius: 25px!important;
+  font-family: roboto-bold;
+  border: 1px solid #00fcef;
+  box-shadow: none!important;
+  text-transform: none!important;
+  outline: none;
+  padding: 5px 25px;
+  font-size: 15px;
+  cursor: pointer;
+  height: fit-content;
+}
+.writeReview:focus, .writeReview:hover {
+  background: #00e7fc;
+}

@@ -1,0 +1,536 @@
+  .ivMainHead {
+    font-family: roboto-bold;
+    font-size: 22px;
+  }
+  .ivMainHeadContainer{
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-between;
+  }
+  .ivMainHeadBtns{
+    margin-left: auto;
+    margin-bottom: 10px;
+  }
+  .viewIconContainer{
+    padding: 5px 5px 3px 5px;
+    border-radius: 15px;
+    background: #7171711a;
+  }
+  .viewIcon{
+    color: #0ea8e3;
+    font-size: 20px;
+  }
+  .likeIconContainer{
+    padding: 5px 5px 3px 5px;
+    border-radius: 15px;
+    background: #7171711a;
+  }
+  .likeIcon{
+    color: #37c790;;
+    font-size: 20px;
+  }
+  .ivContainer {
+    max-width: 1100px;
+    margin: auto;
+    padding: 30px 0px;
+  }
+  .userProfilePicContainer{
+      height: 75px;
+      width: 75px;
+      overflow: hidden;
+  }
+  .userProfilePicContainer span{
+    position: relative !important;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  .userProfilePic{
+    height: 100% !important;
+    width: 100% !important;
+    position: relative !important;
+  }
+  .viewCount{
+      display: inline-flex !important;
+      justify-content: center;
+      padding: 8px 11px !important;
+      border-radius: 5px !important;
+      align-items: center;
+      font-family: roboto-bold;
+      font-size: 13px;
+      /* background: transparent linear-gradient(290deg,#4ffea3,#00e7fc) 0 0; */
+      color: #413d3d;
+      margin-right: 10px;
+  }
+  .likeCount{
+      display: inline-flex !important;
+      justify-content: center;
+      padding: 8px 11px !important;
+      border-radius: 5px !important;
+      align-items: center;
+      font-family: roboto-bold;
+      font-size: 13px;
+      /* background: transparent linear-gradient(290deg,#4ffea3,#00e7fc) 0 0; */
+      color: #413d3d;
+      margin-right: 10px;
+  }
+  .ivDownloadBtn {
+    float: right;
+    display: inline-block;
+    padding: 10px 16px;
+    font-family: roboto-bold;
+    font-size: 14px;
+    line-height: 20px;
+    border-radius: 30px;
+    border: none;
+    background: transparent linear-gradient(290deg, #4ffea3, #00e7fc) 0 0;
+    cursor: pointer;
+  }
+  .ivMainImage{
+      width: 100%!important;
+      height: 100%!important;
+      position: relative!important;
+      border-radius: 10px;
+  }
+  .imageContainer span{
+    position: relative!important;
+  }
+  .ivMainVideo{
+      width: 100%;
+      border-radius: 10px;
+  }
+  .imageContainer{
+      position: relative;
+      margin-top: 14px;
+      margin-bottom: 40px;
+  }
+  .likeShare{
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      background-color: rgba(255, 255, 255, 0.6);
+      padding: 10px 20px;
+      border-radius: 0px 0px 0px 15px;
+      z-index: 999;
+  
+  }
+  .commentRepliesContainer{
+    margin-left: 55px;
+  }
+  .commentReply{
+    margin-bottom: 15px;
+  }
+  .commentviewReplies{
+    margin: 20px 0px 10px 0px;
+    padding: 0px;
+    font-size: 14px;
+    font-family: roboto-bold;
+    color: #00e7fc;
+  }
+  .commentReplyImageName{
+    display: flex;
+    align-items: center;
+  }
+  .commentReplyImage{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 1px solid #c5c5c5;
+  }
+  .commentReplyName{
+    margin-left: 5px;
+    font-size: 14px;
+    font-family: roboto-bold;
+    cursor: pointer;
+  }
+  .commentReplyActual{
+    font-size: 14px;
+    margin-left: 37px;
+  }
+  .LikeShareBtn{
+      font-size: 40px !important;
+      cursor: pointer;
+  }
+  .ivRightBtn, .ivRightBtn1{
+      font-size: 60px !important;
+      border-radius: 30px;
+      cursor: pointer;
+  }
+  .mainContainer{
+      position: relative;
+      padding: 30px 0px;
+  }
+  .userDetailsContainer{
+      display: flex;
+  }
+  .ivRightNext{
+      font-family: roboto-bold;
+      font-size: 16px;
+      cursor: pointer;
+  }
+  .ivLeftBtnContainer{
+      position: absolute;
+      top: calc(50vh - 60px);
+      width: fit-content;
+      z-index: 999;
+  }
+  .ivRightBtnContainer{
+      position: absolute;
+      top: calc(50vh - 60px);
+      right: 0;
+      width: fit-content;
+      z-index: 999;
+  }
+  .ivLeftPrevious{
+      font-family: roboto-bold;
+      font-size: 16px;
+      cursor: pointer;
+  }
+  .ivLeftBtn, .ivLeftBtn1{
+      font-size: 60px !important;
+      border-radius: 30px;
+      cursor: pointer;
+    }
+  .ivLeftBtn, .ivRightBtn{
+      background-color: rgba(255, 255, 255, 0.315);
+  }
+  .ivRightBtn:hover, .ivLeftBtn:hover, .ivRightBtn1:hover, .ivLeftBtn1:hover{
+      background-color: #4ffea3;
+  }
+  .ivName{
+      margin-top: 10px;
+      font-family: roboto-bold;
+      font-size: 20px;
+      line-height: 30px;
+      margin-bottom: 5px;
+      padding: 0px 6px;
+  }
+  .ivName:hover{
+      color: #00A4E2;
+  }
+  .ivfollow{
+      font-family: roboto-regular;
+      font-size: 14px;
+      color: #222222;
+      cursor: pointer;
+      padding: 7px 23px;
+      border-radius: 4px;
+      background-color: #7171711a;
+  }
+  .ivHello{
+      font-family: roboto-regular;
+      font-size: 16px;
+      line-height: 24px;
+      margin: 5px 0px;
+  }
+  .ivHello1{
+      font-family: roboto-regular;
+      font-size: 16px;
+      line-height: 24px;
+      margin: 10px 0px;
+  }
+  .ivCommentTitle{
+      font-family: roboto-bold;
+      font-size: 16px;
+      /* line-height: 24px; */
+  
+  }
+  .ivComName{
+  margin-left: 10px;}
+  .ivcommentLike{
+      float: right;
+      color: #00e7fc;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  .commentProfileTitleContainer span{
+    position: relative !important;
+  }
+  .commentProfile{
+    position: relative !important;
+    height: 45px!important;
+    width: 45px!important;
+    border-radius: 50%;
+    border: 1px solid #c5c5c5 !important;
+  }
+  .commentActual{
+      margin-left: 55px;
+  }
+  .ivHr{
+      border-bottom: 1px solid #d7d4d4;
+      border-top: 0;
+      margin: 15px 0px;
+  }
+  .ivThumbnail{
+      width:100%;
+      border-radius: 15px;
+      cursor: pointer;
+  }
+  .ivSYML{
+      width:100%;
+      border-radius: 5px;
+      cursor: pointer;
+  }
+  .ncy{
+      text-align: center;
+      font-family: roboto-regular;
+      margin-top: 40px;
+      font-size: 14px;
+      color: rgb(152, 152, 152);
+  }
+  .tag{
+      text-align: center;
+      font-family: roboto-bold;
+      margin-bottom: 15px;
+      font-size: 25px;
+  }
+  .chips{
+      width: fit-content;
+      display: inline-block;
+      padding: 5px 10px;
+      border: 1px solid #d1d1d1;
+      border-radius: 5px;
+      font-family: roboto-regular;
+      color: #767676;
+      cursor: pointer;
+      margin: 0px 7px;
+      font-size: 14px;
+  }
+  .chips1{
+      width: fit-content;
+      display: inline-block;
+      padding: 5px 10px;
+      border: 1px solid #e5e5e5;
+      border-radius: 5px;
+      font-family: roboto-regular;
+      background-color: #d1d1d1;
+      color: #000;
+      cursor: pointer;
+      margin: 0px 7px;
+      font-size: 14px;
+  }
+  .TagImage{
+      border-radius: 10px;
+      width: 100%;
+  }
+  .allCommentsContainer{
+    max-height: 500px;
+    overflow: auto;
+  }
+  .deleteComment{
+    color: rgba(255, 0, 0, 0.603);
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .commentsContainer{
+    border: 1px solid #d5d5d5;
+    padding: 20px 16px 12px 26px;
+    border-radius: 5px;
+  }
+  @media only screen and (max-width: 800px) {
+      .likeShare{
+          background-color: rgba(255, 255, 255, 0.6);
+          padding: 5px 10px;
+          border-radius: 0px 0px 0px 10px;
+      
+      }
+      .LikeShareBtn{
+          font-size: 20px !important
+      }
+  
+  }
+  
+  @media only screen and (max-width: 1200px) {
+      .ivContainer {
+          max-width: 1100px;
+          margin: auto;
+          /* padding-top: 20px; */
+          padding: 30px 8px 35px 8px;
+        }
+        
+      .ivLeftBtn, .ivRightBtn{
+        font-size: 40px !important;
+      }
+      .ivLeftBtn1, .ivRightBtn1{
+          display: none;
+      }
+  }
+  @media only screen and (max-width: 1200px) { 
+      .tag {
+          font-size: 19px;
+      }
+  }
+  .shareOptionsContainer{
+      display: flex;
+      justify-content: center;
+      margin: 10px 0px;
+  }
+  .shareOption{
+      display: flex;
+      align-items: center;
+      /* cursor: pointer; */
+  }
+  
+  .shareBtn{
+      padding: 10px 5px !important;
+  }
+  
+  .pilotProfile{
+      height: 75px;
+      width: 75px;
+      border-radius: 37.5px;
+      cursor: pointer;
+      border: 1px solid #e7e7e7;
+  }
+  .likeBtn{
+      display: inline-flex !important;
+      justify-content: center;
+      padding: 7px 30px !important;
+      border-radius: 5px !important;
+      border: 1px solid #e5e5e5 !important;
+      cursor: pointer !important;
+      font-family: roboto-bold;
+      font-size: 16px;
+      margin-right: 10px;
+  }
+  
+  .downBtn{
+      display: inline-flex !important;
+      justify-content: center;
+      padding: 4px 10px !important;
+      border-radius: 20px !important;
+      cursor: pointer !important;
+      align-items: center;
+      font-family: roboto-bold;
+      font-size: 13px;
+      color: #fff;
+      background: #000;
+      margin-right: 10px;
+      margin-left: 10px;
+  }
+  .moreBtn{
+      padding: 7px;
+      display: inline-flex !important;
+      border-radius: 5px;
+      cursor: pointer;
+      color: #717171;
+  }
+  .showMore{
+      position: absolute;
+      right: 0px;
+      z-index: 999;
+      top: 0px;
+      background-color: #f3f3f3;
+      border: 1px solid rgb(168, 168, 168);
+      border-radius: 5px;
+  }
+  .showMoreOption{
+      text-align: left;
+      padding: 7px 20px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 16px;
+  }
+  .reportInputContainer{
+      width: 250px;
+      margin: 20px;
+      text-align: left;
+  }
+  .reportInput{
+      height: 80px;
+      max-width: 250px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+  }
+  .showMoreOption:hover{
+      background-color: #c5c5c5;
+  }
+  .reportInputBtn{
+      margin: auto!important;
+  }
+  @media only screen and (max-width: 900px){
+      .likeBtn{
+          display: inline-flex !important;
+          justify-content: center;
+          padding: 3px 10px !important;
+          border-radius: 5px !important;
+          border: 1px solid #e5e5e5 !important;
+          cursor: pointer !important;
+          font-family: roboto-bold;
+          font-size: 16px;
+          margin-right: 5px;
+      }
+      
+      .downBtn{
+          display: inline-flex !important;
+          justify-content: center;
+          padding: 3px 10px !important;
+          border-radius: 5px !important;
+          border: 1px solid #e5e5e5 !important;
+          cursor: pointer !important;
+          align-items: center;
+          font-family: roboto-bold;
+          font-size: 16px;
+          background: transparent linear-gradient(290deg,#4ffea3,#00e7fc) 0 0;
+          margin-right: 5px;
+      }
+      .moreBtn{
+          padding: 3px 10px;
+      }
+  
+  }
+  
+  .IvTitle{
+      font-size: 26px;
+      font-family: roboto-bold;
+      margin: 0px 0px;
+  }
+  .IvIndustry{
+      font-size: 16px;
+      font-family: roboto-regular;
+      margin: 10px 0px 20px 0px;
+  }
+  .commentsNameActive{
+      font-family: roboto-bold;
+      cursor: pointer;
+      font-size: 18px;
+      line-height: 40px;
+      border-bottom: 2px solid #00e7fc;
+  }
+  .commentsName{
+      font-family:roboto-regular;
+      font-size: 18px;
+      line-height: 40px;
+      border-bottom: 2px solid #e5e5e5;
+      cursor: pointer;
+  }
+  .addComment{
+      padding: 5px 20px;
+      margin-left: auto;
+      display: block;
+      width: fit-content;
+      background: transparent linear-gradient(290deg,#4ffea3,#00e7fc) 0 0;
+      border-radius: 20px;
+      cursor: pointer;
+      font-family: roboto-bold;
+  }
+  .wrc{
+      font-size: 18px;
+      font-family: roboto-regular;
+      margin-bottom: 15px;
+  }
+  .tagsContainer{
+      overflow-x: auto;
+    white-space: nowrap;
+    text-align: center;
+    scrollbar-width: none;
+  }
+  
+  .counts{
+      color:#a5a5a5;
+      font-size: 14px;
+      align-self: center;
+  }

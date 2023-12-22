@@ -1,0 +1,168 @@
+/*
+ * The Typekit service used to deliver this font or fonts for use on websites
+ * is provided by Adobe and is subject to these Terms of Use
+ * http://www.adobe.com/products/eulas/tou_typekit. For font license
+ * information, see the list below.
+ *
+ * muli:
+ *   - http://typekit.com/eulas/00000000000000007735a0e1
+ *   - http://typekit.com/eulas/00000000000000007735a0e5
+ *   - http://typekit.com/eulas/00000000000000007735a0eb
+ *   - http://typekit.com/eulas/00000000000000007735a0ee
+ *   - http://typekit.com/eulas/00000000000000007735a0f2
+ *   - http://typekit.com/eulas/00000000000000007735a0f6
+ *   - http://typekit.com/eulas/00000000000000007735a0fa
+ *   - http://typekit.com/eulas/00000000000000007735a0fe
+ *   - http://typekit.com/eulas/00000000000000007735a100
+ *   - http://typekit.com/eulas/00000000000000007735a103
+ *   - http://typekit.com/eulas/00000000000000007735a105
+ *   - http://typekit.com/eulas/00000000000000007735a107
+ *   - http://typekit.com/eulas/00000000000000007735a109
+ *   - http://typekit.com/eulas/00000000000000007735a10b
+ *
+ * © 2009-2020 Adobe Systems Incorporated. All Rights Reserved.
+ */
+/*{"last_published":"2020-12-24 05:30:00 UTC"}*/
+
+/* @import url("https://p.typekit.net/p.css?s=1&k=qht7tej&ht=tk&f=15779.15780.15781.15782.37490.37491.37494.37495.37496.37497.42300.42301.42302.42303&a=61906411&app=typekit&e=css");
+
+@font-face {
+font-family:"muli";
+src:url("https://use.typekit.net/af/183439/00000000000000007735a0e1/30/l?subset_id=2&fvd=n3&v=3") format("woff2"),url("https://use.typekit.net/af/183439/00000000000000007735a0e1/30/d?subset_id=2&fvd=n3&v=3") format("woff"),url("https://use.typekit.net/af/183439/00000000000000007735a0e1/30/a?subset_id=2&fvd=n3&v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:300;
+}
+
+@font-face {
+font-family:"muli";
+src:url("https://use.typekit.net/af/437da9/00000000000000007735a0e5/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff2"),url("https://use.typekit.net/af/437da9/00000000000000007735a0e5/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff"),url("https://use.typekit.net/af/437da9/00000000000000007735a0e5/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("opentype");
+font-display:auto;font-style:italic;font-weight:400;
+}
+
+@font-face {
+font-family:"muli";
+src:url("https://use.typekit.net/af/4d244c/00000000000000007735a0eb/30/l?subset_id=2&fvd=i3&v=3") format("woff2"),url("https://use.typekit.net/af/4d244c/00000000000000007735a0eb/30/d?subset_id=2&fvd=i3&v=3") format("woff"),url("https://use.typekit.net/af/4d244c/00000000000000007735a0eb/30/a?subset_id=2&fvd=i3&v=3") format("opentype");
+font-display:auto;font-style:italic;font-weight:300;
+}
+
+@font-face {
+font-family:"muli";
+src:url("https://use.typekit.net/af/7fe570/00000000000000007735a0ee/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/7fe570/00000000000000007735a0ee/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/7fe570/00000000000000007735a0ee/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:400;
+}
+
+@font-face {
+font-family:"muli";
+src:url("https://use.typekit.net/af/d7d4e2/00000000000000007735a0f2/30/l?subset_id=2&fvd=i2&v=3") format("woff2"),url("https://use.typekit.net/af/d7d4e2/00000000000000007735a0f2/30/d?subset_id=2&fvd=i2&v=3") format("woff"),url("https://use.typekit.net/af/d7d4e2/00000000000000007735a0f2/30/a?subset_id=2&fvd=i2&v=3") format("opentype");
+font-display:auto;font-style:italic;font-weight:200;
+}
+
+@font-face {
+font-family:"muli";
+src:url("https://use.typekit.net/af/6c73dc/00000000000000007735a0f6/30/l?subset_id=2&fvd=n2&v=3") format("woff2"),url("https://use.typekit.net/af/6c73dc/00000000000000007735a0f6/30/d?subset_id=2&fvd=n2&v=3") format("woff"),url("https://use.typekit.net/af/6c73dc/00000000000000007735a0f6/30/a?subset_id=2&fvd=n2&v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:200;
+}
+
+@font-face {
+font-family:"muli";
+src:url("https://use.typekit.net/af/795c47/00000000000000007735a0fa/30/l?subset_id=2&fvd=i6&v=3") format("woff2"),url("https://use.typekit.net/af/795c47/00000000000000007735a0fa/30/d?subset_id=2&fvd=i6&v=3") format("woff"),url("https://use.typekit.net/af/795c47/00000000000000007735a0fa/30/a?subset_id=2&fvd=i6&v=3") format("opentype");
+font-display:auto;font-style:italic;font-weight:600;
+}
+
+@font-face {
+font-family:"muli";
+src:url("https://use.typekit.net/af/1e8fb7/00000000000000007735a0fe/30/l?subset_id=2&fvd=n6&v=3") format("woff2"),url("https://use.typekit.net/af/1e8fb7/00000000000000007735a0fe/30/d?subset_id=2&fvd=n6&v=3") format("woff"),url("https://use.typekit.net/af/1e8fb7/00000000000000007735a0fe/30/a?subset_id=2&fvd=n6&v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:600;
+}
+
+@font-face {
+font-family:"muli";
+src:url("https://use.typekit.net/af/21b2f2/00000000000000007735a100/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("woff2"),url("https://use.typekit.net/af/21b2f2/00000000000000007735a100/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("woff"),url("https://use.typekit.net/af/21b2f2/00000000000000007735a100/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("opentype");
+font-display:auto;font-style:italic;font-weight:700;
+}
+
+@font-face {
+font-family:"muli";
+src:url("https://use.typekit.net/af/b0bf15/00000000000000007735a103/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"),url("https://use.typekit.net/af/b0bf15/00000000000000007735a103/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"),url("https://use.typekit.net/af/b0bf15/00000000000000007735a103/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:700;
+}
+
+@font-face {
+font-family:"muli";
+src:url("https://use.typekit.net/af/0c70e1/00000000000000007735a105/30/l?subset_id=2&fvd=n8&v=3") format("woff2"),url("https://use.typekit.net/af/0c70e1/00000000000000007735a105/30/d?subset_id=2&fvd=n8&v=3") format("woff"),url("https://use.typekit.net/af/0c70e1/00000000000000007735a105/30/a?subset_id=2&fvd=n8&v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:800;
+}
+
+@font-face {
+font-family:"muli";
+src:url("https://use.typekit.net/af/b9ad39/00000000000000007735a107/30/l?subset_id=2&fvd=i8&v=3") format("woff2"),url("https://use.typekit.net/af/b9ad39/00000000000000007735a107/30/d?subset_id=2&fvd=i8&v=3") format("woff"),url("https://use.typekit.net/af/b9ad39/00000000000000007735a107/30/a?subset_id=2&fvd=i8&v=3") format("opentype");
+font-display:auto;font-style:italic;font-weight:800;
+}
+
+@font-face {
+font-family:"muli";
+src:url("https://use.typekit.net/af/d22e78/00000000000000007735a109/30/l?subset_id=2&fvd=n9&v=3") format("woff2"),url("https://use.typekit.net/af/d22e78/00000000000000007735a109/30/d?subset_id=2&fvd=n9&v=3") format("woff"),url("https://use.typekit.net/af/d22e78/00000000000000007735a109/30/a?subset_id=2&fvd=n9&v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:900;
+}
+
+@font-face {
+font-family:"muli";
+src:url("https://use.typekit.net/af/5e866c/00000000000000007735a10b/30/l?subset_id=2&fvd=i9&v=3") format("woff2"),url("https://use.typekit.net/af/5e866c/00000000000000007735a10b/30/d?subset_id=2&fvd=i9&v=3") format("woff"),url("https://use.typekit.net/af/5e866c/00000000000000007735a10b/30/a?subset_id=2&fvd=i9&v=3") format("opentype");
+font-display:auto;font-style:italic;font-weight:900;
+}
+
+.tk-muli { font-family: "muli",sans-serif; } */
+
+
+
+
+  @font-face {
+    font-family: MuliBold;
+    src: url("../font/Muli-Bold.ttf");
+  }
+
+  @font-face {
+    font-family: MuliBoldItalic;
+    src: url("../font/Muli-BoldItalic.ttf");
+  }
+
+
+  @font-face {
+    font-family: MuliExtraLight;
+    src: url('../font/Muli-ExtraLight.ttf');
+  }
+
+
+  @font-face {
+    font-family: MuliExtraLightItalic;
+    src: url('../font/Muli-ExtraLightItalic.ttf');
+  }
+
+  @font-face {
+    font-family: MuliItalic;
+    src: url('../font/Muli-Italic.ttf');
+  }
+
+  @font-face {
+    font-family: MuliLight;
+    src: url('../font/Muli-Light.ttf');
+  }
+
+  @font-face {
+    font-family: MuliLightItalic;
+    src: url('../font/Muli-LightItalic.ttf');
+  }
+
+  @font-face {
+    font-family: MuliSemiBoldItalic;
+    src: url('../font/Muli-Semi-BoldItalic.ttf');
+  }
+
+  @font-face {
+    font-family: MuliSemiBold;
+    src: url('../font/Muli-SemiBold.ttf');
+  }
+
+  @font-face {
+    font-family: Muli;
+    src: url('../font/Muli.ttf');
+  }

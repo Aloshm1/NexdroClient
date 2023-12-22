@@ -1,0 +1,74 @@
+.Container{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: rgb(248,248,251);
+}
+
+.courseThumbnailContainer{
+  position: relative;
+  margin: auto;
+  margin-bottom: 50px;
+}
+
+.courseSubContainer{
+  background: #fff 0 0 no-repeat padding-box;
+  border: 1px solid #e8e8e8;
+  border-radius: 10px;
+  padding: 17px 25px 21px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.courseThumbnail{
+  border-radius: 10px;
+}
+
+.courseThumbnailEditContainer{
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.courseThumbnailEditIcon{
+  color: #00e7fc;
+  font-size: 50px;
+  padding: 10px;
+  background: #00000080;
+  border-radius: 50%;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+
+/* =================================== Media query =================================== */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .courseThumbnailContainer{
+    width: 100%;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .courseThumbnailContainer{
+    width: 100%;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .courseThumbnailContainer{
+    width: 70%;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
+}

@@ -1,0 +1,149 @@
+.main_container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.image_container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 27px;
+}
+
+.name_c {
+  font-size: 24px;
+  color: "#303F4B";
+  text-align: left;
+  font-family: roboto-bold;
+  line-height: 29px;
+}
+.loc_container {
+  margin-top: 7px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 17px;
+}
+.loc_p {
+  font-family: roboto;
+  font-weight: normal;
+  font-size: 14px;
+  color: #303f4b;
+  text-align: left;
+}
+.btn_container {
+  display: inline;
+}
+.fan_container {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.fan_me_container {
+  border: 1px solid #70707014;
+  width: 196px;
+  cursor: pointer;
+
+  border-radius: 10px;
+  padding-bottom: 14px;
+}
+.fan_para {
+  font-family: roboto;
+  font-size: 16px;
+  text-align: center;
+  line-height: 19px;
+  color: #9e9e9e;
+}
+.fan_h {
+  font-size: 37px;
+  font-family: roboto-black;
+  text-align: center;
+  color: #303f4b;
+  line-height: 44px;
+}
+.feed_option {
+  font-family: roboto;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: left;
+  color: #303f4b;
+
+  text-transform: initial;
+}
+.feed_option_select {
+  font-family: roboto-bold;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: left;
+  color: #303f4b;
+
+  text-transform: initial;
+}
+.view_selector {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 114px;
+}
+.img_pilot_land {
+  border-radius: 10px;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.name_container{
+  display:flex;
+  align-items: center;
+  gap: 3px;
+}
+.video_carousel{
+  width: 150px;
+  height:150px;
+  border-radius: 50%;
+  object-fit: cover;
+ 
+}
+.share_icon{
+  display: flex;
+  flex-direction: column;
+  padding-top: 40px;
+ 
+  width: 150px;
+  height:150px;
+  border: 1px solid #ccc;
+  gap: 20px;
+
+
+
+ align-items: center;
+  border-radius: 50%;
+  
+}
+
+@media only screen and (max-width: 600px) {
+  .image_container {
+    justify-content: center;
+  }
+  .fan_container {
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .fan_me_container {
+    width: 150px;
+  }
+  .view_selector {
+    column-gap: 30px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .fan_me_container {
+    width: 150px;
+  }
+  .view_selector {
+    margin-top: 12px;
+  }
+}

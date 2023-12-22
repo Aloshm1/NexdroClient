@@ -1,0 +1,349 @@
+.coverImg{
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+    object-fit: cover;
+}
+.profilePic{
+    position: absolute;
+    height: 120px;
+    width: 120px;
+    border-radius: 60px;
+    bottom: -10px;
+    left: 45px;
+    border: 5px solid #fff;
+    background-color: #fff;
+    overflow: hidden;
+}
+.imageContainer span{
+    height: 100%!important;
+}
+.shotDisplayContainer{
+    position: relative;
+    height: 100%;
+    max-height: 300px;
+    min-height: 100px;
+    background-color: #c5c5c5;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.views{
+    color: #8d8d8d;
+    display: inline-flex;
+    align-items: center;
+}
+.viewCount{
+    color:#374957;
+    margin-left: 10px;
+    margin-right: 20px;
+    font-size: 14px;
+    font-family: roboto-bold;
+}
+.viewCountContainer{
+    text-align: right;
+    padding-right: 24px;
+}
+.pilotIconBtn{
+    background-color: #EFF3F6;
+    border-radius: 20px;
+}
+.pilotIcon{
+    font-size: 17px;
+}
+.cont{
+    padding: 20px 20px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.leftSections1{
+    background-color: #fff;
+    border-radius: 10px;
+    padding-bottom: 10px;
+    box-shadow: 0px 0px 2px #00000029;
+    margin-bottom: 20px;
+}
+.pilotDetailSectionContainer{
+    background-color: #CFD9E0;
+    border-radius: 3px;
+}
+@media only screen and (max-width: 600px){
+    .coverImg{
+        width: 100%;
+        border-radius: 10px 10px 0px 0px;
+        object-fit: cover;
+    }
+    .profilePic{
+        height: 80px;
+        width: 80px;
+        position: absolute;
+        border-radius: 40px;
+        bottom: -25px;
+        right: 10px
+    }
+    .cont{
+        padding: 10px !important
+    }
+    .pilotName{
+        font-size: 19px !important;
+        line-height: 26px;
+    }
+    .pilotType{
+        font-size: 14px !important;
+        margin-bottom: 10px;
+    }
+}
+.pilotName{
+    font-family: roboto-bold;
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: #374957;
+
+}
+.pilotType{
+    font-family: roboto-regular;
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #717171;
+}
+.hireBtn{
+    background: transparent linear-gradient(180deg, #69E4BE 0%, #2CE4E4 100%) 0% 0% no-repeat padding-box;
+    display: inline-flex !important;
+    justify-content: center;
+    border-radius: 5px !important;
+    border: 1px solid #e7e7e7 !important;
+    cursor: pointer !important;
+    align-items: center;
+    height: fit-content;
+    font-size: 14px;
+    padding: 7px 18px !important;
+    color: #374957;
+    font-family: roboto-bold;
+}
+.followBtn{
+    background-color: #e5e5e5 !important;
+    display: inline-flex !important;
+    padding: 3px 10px !important;
+    border-radius: 5px !important;
+    border: 1px solid #e7e7e7 !important;
+    cursor: pointer !important;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    font-size: 14px;
+    padding: 7px 18px !important;
+    color: #374957;
+    font-family: roboto-bold;
+}
+.shareBtn{
+    display: inline-flex !important;
+    padding: 5px 4px !important;
+    border-radius: 5px !important;
+    cursor: pointer !important;
+    justify-content: center;
+    align-items: center;
+}
+.tab{
+    font-size: 16px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: roboto-regular;
+    height: 40px;
+    /* border: 1px solid #c9c6c6; */
+    cursor: pointer;
+}
+.leftSections2{
+    padding: 25px 32px 20px 32px;
+    background: white;
+    border-radius: 3px;
+    margin-bottom: 17px;
+}
+.moreDetailsContainer{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.tabActive{
+    font-size: 16px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: roboto-bold;
+    height: 40px;
+    color: #00A4E2;
+    border-bottom: 2px solid #00A4E2;
+    /* border: 1px solid #c9c6c6; */
+    cursor: pointer;
+}
+.img{
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.pilotTitle{
+    font-family: roboto-bold;
+    font-size: 16px;
+    margin-bottom: 8px;
+    display: inline-block !important;
+    color: #374957;
+    margin-bottom: 20px;
+}
+.pilotTitle1{
+    color: #00A4E2;
+    font-size: 16px;
+    margin-bottom: 20px;
+    font-family: roboto-bold;
+}
+.pilotData{
+    font-family: roboto-regular;
+    font-size: 15px;
+    display: block;
+    color: #374957;
+    margin-top: 10px;
+}
+.skillBadge{
+    display: inline-block;
+    font-size: 14px;
+    font-family: roboto-regular;
+    padding: 5px 30px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    background-color: #fff;
+    border: 1px solid #dedede;
+    border-radius: 5px;
+    font-weight: 400;
+    color: #717171;
+    /* background: linear-gradient(179deg, rgba(79, 254, 163, 0.6) 0%, rgba(0, 231, 252, 0.6) 100%) 0% 0% no-repeat padding-box padding-box transparent !important;*/
+}
+.rightCont{
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 20px;
+    border: 1px solid rgb(238, 238, 238);
+    margin-bottom: 20px;
+}
+.recentActivity{
+    font-family: roboto-bold;
+    font-size: 18px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #c9c6c6;
+    margin-bottom: 10px;
+}
+.noRecentActivity{
+    font-family: roboto-regular;
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.rightCont1{
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 1px solid rgb(238, 238, 238);
+    margin-bottom: 20px;
+}
+.followingTab{
+    background-color: #e5e5e5;
+    font-size: 16px;
+    font-family: roboto-regular;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(238, 238, 238);
+    height: 40px;
+    cursor: pointer;
+
+}
+.followingPic{
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.followingName{
+    font-size: 18px;
+    font-family: roboto-bold;
+    margin-left: 15px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    text-align: left;
+}
+.follow{
+    font-size: 18px;
+    font-family: roboto-regular;
+    color:#00e7fc;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.likeDiv{
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    display: flex;
+    align-items: center;
+    z-index: 999;
+}
+
+.likeNo{
+    font-family: roboto-regular;
+    color: #fff;
+}
+
+@media only screen and (max-width: 500px) {
+    .hireBtn{
+        background: linear-gradient(290deg, rgb(79, 254, 163) 0%, rgb(0, 231, 252) 100%) 0% 0% no-repeat padding-box padding-box transparent !important;
+        display: inline-flex !important;
+        justify-content: center;
+        padding: 5px 10px !important;
+        border-radius: 5px !important;
+        border: 1px solid #e7e7e7 !important;
+        cursor: pointer !important;
+        align-items: center;
+    }
+    .followBtn{
+        background-color: #e5e5e5 !important;
+        display: inline-flex !important;
+        padding: 5px 10px !important;
+        border-radius: 5px !important;
+        border: 1px solid #e7e7e7 !important;
+        cursor: pointer !important;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    .shareBtn{
+        background-color: #e5e5e5 !important;
+        display: inline-flex !important;
+        padding: 5px 4px !important;
+        border-radius: 5px !important;
+        border: 1px solid #e7e7e7 !important;
+        cursor: pointer !important;
+        justify-content: center;
+        align-items: center;
+    }
+  }
+
+.experience{
+    font-size: 18px;
+    font-family: roboto-bold;
+    margin-bottom: 10px;
+}
+.role {
+    font-family: roboto-bold;
+    font-size: 16px;
+    margin-bottom: 2px;
+  }
+  .companyName {
+    font-family: roboto-regular;
+    font-size: 14px;
+    margin-bottom: 3px;
+  }
+  .description {
+    font-family: roboto-regular;
+    font-size: 13px;
+    color: #a5a5a5;
+  }

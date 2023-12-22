@@ -1,0 +1,46 @@
+.container{
+    max-width: 1100px;
+    margin: auto;
+    margin-top: 15px;
+}
+.image{
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.badge{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background-color: rgba(0, 0, 0, 0.498);
+    padding: 10px;
+    border-radius: 90px;
+    font-size: 80px;
+    color: gold;
+}
+.profilePic{
+    width: 80px;
+    height:80px;
+    border-radius: 40px;
+    margin: 10px;
+}
+.pilotName{
+    font-family: roboto-bold;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 5px;
+}
+.follow{
+    font-family: roboto-regular;
+    font-size: 16px;
+    line-height: 24px;
+    color: #00e7fc;
+    cursor: pointer;
+}
+.likes{
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-family: roboto-regular;
+    margin-right: 15px;
+}

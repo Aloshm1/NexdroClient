@@ -1,0 +1,33 @@
+.popupContainer {
+  padding: 40px;
+  max-width: 600px;
+  position: relative;
+}
+.closeBtn {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  cursor: pointer;
+}
+.popupHead {
+  font-family: roboto-bold;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.popupDesc {
+  font-family: roboto-regular;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.popupSubmit {
+  margin: 10px auto;
+  color: #041d1f !important;
+  background: transparent linear-gradient(121deg, #00e7fc, #4ffea3) 0 0
+    no-repeat padding-box;
+  border-radius: 25px !important;
+  font-family: roboto-bold;
+  border: 1px solid #00fcef;
+  padding: 8px 45px;
+  display: inline-block;
+  cursor: pointer;
+}

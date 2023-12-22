@@ -1,0 +1,1 @@
+const badwords = ["anal","anus", "arse", "ass", "balls", "ballsack", "bastard","biatch", "bitch", "bloddy","blow job", "blowjob", "bollock", "bollok", "boner", "boob", "boobs", "bugger", "bum", "but"]

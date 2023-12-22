@@ -1,0 +1,97 @@
+.login{
+  background-color: #fff;
+  display: flex;
+  gap: 41px;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 20px;
+}
+.loginContainer{
+  min-height: calc(100vh - 75px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.register{
+  display: flex;
+  min-height: calc(100vh - 75px);
+  justify-content: center;
+  align-items: center;
+  padding: 50px 0;
+}
+.registerFormContainer{
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.registerImage, .registerImage span{
+  height: 100%!important;
+}
+.registerImage span img{
+  object-fit: cover;
+}
+.registerFormInnerContainer{
+  padding: 0px 40px 0px 32px;
+}
+.loginImage{
+  flex: 1;
+  height: 100%;
+}
+.loginForm{
+  flex: 1;
+}
+.titleTextContainer{
+  padding: 20px 0px;
+  border-bottom: 1px solid #e9e9e9;
+  margin-bottom: 80px;
+}
+.titleText{
+  font-size: 20px;
+  font-family: roboto-bold;
+  line-height: 30px;
+  text-align: center;
+}
+.loginLabel{
+  font-size: 14px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+.loginSubmitBtn{
+  width: 100%;
+  background: transparent linear-gradient(270deg, #69E4BE 0%, #2CE4E4 100%) 0% 0% no-repeat padding-box;
+  border-radius: 25px;
+  font-size: 16px;
+  font-family: roboto-bold;
+  padding: 10px;
+  margin-top: 30px;
+  margin-bottom: 28px;
+}
+@media (max-width: 767px) {
+  .loginImage{
+    flex: 0;
+  }
+}
+.forgetPassword{
+  font-size: 13px;
+  text-decoration: underline;
+  font-family: roboto-bold;
+  text-align: right;
+}
+.forgetPassword:hover{
+  color: #00e7fc;
+}
+.loginFormFooter{
+  margin-top: 30px;
+  font-family: roboto-bold;
+  font-size: 14px;
+  color: #000;
+  text-align: center;
+}
+.loginPageRegisterLink{
+  color: #7a7a7a;
+  font-family: roboto-regular;
+  margin-left: 10px;
+}
+.loginPageRegisterLink:hover{
+  color: #00e7fc;
+}

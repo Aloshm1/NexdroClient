@@ -1,0 +1,45 @@
+.mainBar {
+  height: 60px;
+  box-shadow: 0px 0px 5px #0000001a;
+}
+.navbarTitle {
+  display: block;
+  padding-top: 20px;
+}
+.navbaraccount {
+  padding: 0px;
+  display: inline;
+  font-family: roboto-regular;
+  font-size: 18px;
+  line-height: 26px;
+  margin-right: 50px;
+  cursor: pointer;
+}
+.navbaraccountActive {
+  padding: 0px;
+  display: inline;
+  font-family: roboto-bold;
+  font-size: 18px;
+  line-height: 26px;
+  margin-right: 50px;
+  cursor: pointer;
+  color: #00e7fc;
+}
+.upgradeButton {
+  margin-top: 15px;
+  background-color: rgb(79, 254, 163);
+  padding: 5px 20px;
+  border-radius: 20px;
+  font-family: roboto-regular;
+  font-size: 16px;
+  border: 1px solid rgb(79, 254, 163);
+  float: right;
+}
+@media only screen and (max-width: 600px) {
+  .upgradeButton{
+    padding: 0px 5px;
+  }
+  .navbaraccountActive {
+    margin-right: 30px;
+  }
+}

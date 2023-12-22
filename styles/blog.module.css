@@ -1,0 +1,63 @@
+.blogCategory{
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    font-family: roboto-regular !important;
+}
+.blogDesc{
+    line-height: 20px;
+    font-weight: 400;
+    font-size: 14px;
+    font-family: roboto-regular;
+    color: #fff;
+    margin: 15px 0px;
+}
+.blogImage{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 240px;
+    width: 100%;
+    object-fit: cover;
+}
+.subscriptionBox{
+    background-color: #00e7fc;
+    padding: 45px 40px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+}
+.subscriptionHead{
+    font-size: 25px;
+    font-family: roboto-bold;
+}
+.subscriptionLight{
+    color: #616161;
+    line-height: 20px;
+    font-family: roboto-regular;
+    margin: 20px 0px
+}
+.subscriptionBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #4ffea3!important;
+    border-radius: 25px!important;
+    border: 1px solid #4ffea3!important;
+    width: 100%;
+    height: 42px;
+    font-family: roboto-bold;
+    cursor: pointer;
+    font-weight: 700!important;
+}
+.subTitle{
+    border-bottom: 1px solid #e0e0e0;
+    padding: 15px 0;
+    margin-bottom: 15px;
+    font-size: 25px;
+    font-family:roboto-bold;
+
+}
+.blogMainDesc{
+    line-height: 24px;
+    font-size: 14px;
+    font-family: roboto-regular;
+}

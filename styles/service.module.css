@@ -1,0 +1,165 @@
+.head{
+    width: 100%;
+    background-color: rgba(220, 204, 204, 0.16);
+    position: relative;
+}
+.image{
+    width: 60%;
+    float: right;
+    margin-right: 20px;
+}
+
+.chat{
+    position: absolute;
+    top: 40px;
+    left : 0px;
+    border: 1px solid #e5e5e5;
+    width: 250px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    font-family: roboto-regular;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.chat:before{
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    content: " ";
+    position: absolute;
+    bottom: calc(50% - 10px);
+    right: -5px;
+    transform: rotate(45deg);
+}
+.head1{
+    font-family: roboto-bold;
+    font-size: 30px;
+    /* text-align: center; */
+    margin: 53px auto 75px auto;
+    width: 80%;
+    color: #454545;
+}
+.span{
+    border-bottom: 2px solid #00e7fc;
+}
+.subDiv{
+           /* text-align: center; */
+    margin-top: 10px;
+    font-family: roboto-regular;
+    width: 80%;
+    margin: 0px auto 60PX auto;
+    color: #595656;
+    font-size: 17px;
+}
+.highBox{
+    margin: 30px 0px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #b8b8b8;
+    box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+
+}
+.highTitle{
+    text-align: center;
+    font-family: roboto-bold;
+    font-size: 22px;
+    border-bottom: 1px solid #bcbcbc;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+}
+.highDesc{
+    display: flex;
+    align-items: center;
+    font-family: roboto-regular;
+    margin: 5px 0px;
+}
+.subCreate{
+    font-size: 16px;
+    font-family: roboto-regular;
+    width: 80%;
+    text-align: center;
+    margin: 0px auto 40px auto;
+}
+.stepBox{
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-family: roboto-regular;
+    /* background-color: #C1EFFF; */
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.steps{
+
+    font-family: roboto-bold;
+    font-size: 22px;
+}
+.setup{
+    font-family: roboto-bold;
+    font-size: 20px;
+    /* background: transparent linear-gradient(180deg,#00e7fc,#4ffea3) 0 0 no-repeat padding-box; */
+    background: transparent linear-gradient(180deg,#00e7fc99,#4ffea396) 0 0 no-repeat padding-box;
+    padding: 15px 30px;
+    border-radius: 50px;
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.register{
+   cursor: pointer;
+    background: #fff;
+    padding: 10px 20px;
+    font-family: roboto-bold;
+    font-size: 16px;
+    border-radius: 20px;
+    margin-left: 20px;
+    display: inline-block;
+    
+}
+@media only screen and (max-width: 600px) {
+.setup{
+    padding: 15px 30px;
+    margin-top: 30px;
+    display: block;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    border-radius: 15px;
+
+}
+.subCreate{
+    width: 100%;
+    margin: 0px auto 30px auto;
+}
+.register{
+     margin-left: 0;
+     margin-top: 10px;    
+ }
+ .highBox {
+    margin: 10px 0 0 0 !important;
+ }
+ .head1{
+    padding-top: 30px !important;
+    margin: 0 15px;
+    width: unset;
+}
+.subDiv{
+    margin-top: 10px;
+    width: unset;
+    margin: 15px;
+    font-size: 17px;
+}
+.chat{
+    top: 40px;
+    left: 15px;
+    width: 190px;
+}
+}
+
+@media only screen and (max-width: 900px) {
+    .setup{
+        width: 95%;
+    }
+}

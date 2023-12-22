@@ -1,0 +1,34 @@
+ 
+   .loading  {
+    padding-right: 10px;
+    flex-direction: row !important;
+   }
+  .loading span {
+    display: inline-block;
+    vertical-align: middle;
+    width: .6em;
+    height: .6em;
+    margin: .19em;
+    background: #ffffff;
+    border-radius: .6em;
+    animation: loading 1s infinite alternate;
+  } 
+  .loading span:nth-of-type(2) {
+    background: #ffffff;
+    animation-delay: 0.3s;
+  }
+  .loading span:nth-of-type(3) {
+    background: #ffffff;
+    animation-delay: 0.5s;
+  } 
+
+
+
+  @keyframes loading {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
