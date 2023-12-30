@@ -24,8 +24,8 @@ import Alert from "@mui/material/Alert";
 import { useRouter } from "next/router";
 import InfoIcon from "@mui/icons-material/InfoOutlined";
 import Tooltip from "@mui/material/Tooltip";
-import FilterOutlinedIcon from '@mui/icons-material/FilterOutlined';
-import CheckCircleOutlinedIcon from '@mui/icons-material/CheckCircleOutlined';
+import FilterOutlinedIcon from "@mui/icons-material/FilterOutlined";
+import CheckCircleOutlinedIcon from "@mui/icons-material/CheckCircleOutlined";
 
 const Transition = React.forwardRef(function Transition(props, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
@@ -139,12 +139,12 @@ function UploadFiles({ suggestedKeywords, industriesLst }) {
     if (window) {
       function confirmWinClose(e) {
         if (files.length == 0) {
-          e.preventDefault()
+          e.preventDefault();
           var confirmClose = window.confirm("are you sure you want to leave?");
           return confirmClose;
         }
-        return true
-      }        
+        return true;
+      }
       window.onbeforeunload = confirmWinClose;
       Router.beforePopState(() => {
         //if (componentShouldBeSavedAsDraft(componentData)) {
@@ -301,31 +301,32 @@ function UploadFiles({ suggestedKeywords, industriesLst }) {
     updateLimit();
   }, []);
   const generateThumbnail = (file, boundBox) => {
-    if (!boundBox || boundBox.length != 2){
-      throw "You need to give the boundBox"
+    if (!boundBox || boundBox.length != 2) {
+      throw "You need to give the boundBox";
     }
-    var scaleRatio = Math.min(...boundBox) / Math.max(file.width, file.height)
+    var scaleRatio = Math.min(...boundBox) / Math.max(file.width, file.height);
     var reader = new FileReader();
-    var canvas = document.createElement("canvas")
-    var ctx = canvas.getContext('2d');
-  
+    var canvas = document.createElement("canvas");
+    var ctx = canvas.getContext("2d");
+
     return new Promise((resolve, reject) => {
-      reader.onload = function(event){
-          var img = new Image();
-          img.onload = function(){
-              var scaleRatio = Math.min(...boundBox) / Math.max(img.width, img.height)
-              let w = img.width*scaleRatio
-              let h = img.height*scaleRatio
-              canvas.width = w;
-              canvas.height = h;
-              ctx.drawImage(img, 0, 0, w, h);
-              return resolve(canvas.toDataURL(file.type))
-          }
-          img.src = event.target.result;
-      }
+      reader.onload = function (event) {
+        var img = new Image();
+        img.onload = function () {
+          var scaleRatio =
+            Math.min(...boundBox) / Math.max(img.width, img.height);
+          let w = img.width * scaleRatio;
+          let h = img.height * scaleRatio;
+          canvas.width = w;
+          canvas.height = h;
+          ctx.drawImage(img, 0, 0, w, h);
+          return resolve(canvas.toDataURL(file.type));
+        };
+        img.src = event.target.result;
+      };
       reader.readAsDataURL(file);
-    })
-  }
+    });
+  };
   const getResolution = (file, index, type) => {
     let temp_files;
     if (type === "draft_file") {
@@ -348,14 +349,14 @@ function UploadFiles({ suggestedKeywords, industriesLst }) {
           setFiles([...temp_files]);
         }
         console.log(this.width + "x" + this.height);
-        generateThumbnail(file, [300, 300]).then(function(dataUrl){
+        generateThumbnail(file, [300, 300]).then(function (dataUrl) {
           temp_files[index].thumbnail = dataUrl;
           if (type === "draft_file") {
             setDraftFiles([...temp_files]);
           } else {
             setFiles([...temp_files]);
           }
-        })
+        });
       };
       img.onerror = function () {
         removeSelectedFile(index, null);
@@ -368,10 +369,10 @@ function UploadFiles({ suggestedKeywords, industriesLst }) {
       reader.onload = () => {
         const media = new Audio(reader.result);
         media.onloadedmetadata = () => {
-          console.log(media.duration)
-          if (media.duration / 60 > videoDuration){
+          console.log(media.duration);
+          if (media.duration / 60 > videoDuration) {
             temp_files[index].lengthSatisfied = false;
-          }else{
+          } else {
             temp_files[index].lengthSatisfied = true;
           }
           if (type === "draft_file") {
@@ -379,7 +380,7 @@ function UploadFiles({ suggestedKeywords, industriesLst }) {
           } else {
             setFiles([...temp_files]);
           }
-        }
+        };
         media.onerror = function () {
           removeSelectedFile(index, null);
           setCurruptFileErr(true);
@@ -395,7 +396,7 @@ function UploadFiles({ suggestedKeywords, industriesLst }) {
 
   const selectFirst = () => {
     for (var i = 0; i < files.length; i++) {
-      console.log(files[i].uploadStatus)
+      console.log(files[i].uploadStatus);
       if (files[i].uploadStatus !== "uploaded") {
         changeSelectedFile(i);
         break;
@@ -523,11 +524,23 @@ function UploadFiles({ suggestedKeywords, industriesLst }) {
     if (selectedTab === 1) {
       var temp_files = files;
       if (e.target.id === "file_name") {
-        temp_files[selectedFile][e.target.name] = e.target.value.substring( 0, 100 );
-        document.getElementById("file_name").value = e.target.value.substring( 0, 100 );
+        temp_files[selectedFile][e.target.name] = e.target.value.substring(
+          0,
+          100
+        );
+        document.getElementById("file_name").value = e.target.value.substring(
+          0,
+          100
+        );
       } else if (e.target.id === "experience") {
-        temp_files[selectedFile][e.target.name] = e.target.value.substring( 0, 200 );
-        document.getElementById("experience").value = e.target.value.substring( 0, 200 );
+        temp_files[selectedFile][e.target.name] = e.target.value.substring(
+          0,
+          200
+        );
+        document.getElementById("experience").value = e.target.value.substring(
+          0,
+          200
+        );
       } else {
         temp_files[selectedFile][e.target.name] = e.target.value;
       }
@@ -535,11 +548,23 @@ function UploadFiles({ suggestedKeywords, industriesLst }) {
     } else {
       var temp_files = draftFiles;
       if (e.target.id === "file_name") {
-        temp_files[selectedFile][e.target.name] = e.target.value.substring( 0, 100 );
-        document.getElementById("file_name").value = e.target.value.substring( 0, 100 );
+        temp_files[selectedFile][e.target.name] = e.target.value.substring(
+          0,
+          100
+        );
+        document.getElementById("file_name").value = e.target.value.substring(
+          0,
+          100
+        );
       } else if (e.target.id === "experience") {
-        temp_files[selectedFile][e.target.name] = e.target.value.substring( 0, 200 );
-        document.getElementById("experience").value = e.target.value.substring( 0, 200 );
+        temp_files[selectedFile][e.target.name] = e.target.value.substring(
+          0,
+          200
+        );
+        document.getElementById("experience").value = e.target.value.substring(
+          0,
+          200
+        );
       } else {
         temp_files[selectedFile][e.target.name] = e.target.value;
       }
@@ -562,11 +587,12 @@ function UploadFiles({ suggestedKeywords, industriesLst }) {
     }
   };
   const changeSelectedFile = (index) => {
-    setFileChangeLoading(true)
-    setTimeout(()=>{
-      setFileChangeLoading(false)
-    },10)
-    console.log(selectedTab)
+    console.log(index, "removeindex");
+    setFileChangeLoading(true);
+    setTimeout(() => {
+      setFileChangeLoading(false);
+    }, 10);
+    console.log(selectedTab);
     window.scrollTo(0, 0);
     var tempFiles = selectedTab === 1 ? files : draftFiles;
     if (index !== -1) {
@@ -581,6 +607,7 @@ function UploadFiles({ suggestedKeywords, industriesLst }) {
       setSelectedSuggestedKeywords(tempFiles[index].suggestedKeywords);
       setSelectedIndustry(tempFiles[index].industry);
     } else {
+      console.log("remove");
       setSelectedFile(0);
       document.getElementById("file_name").value = "";
       document.getElementById("experience").value = "";
@@ -650,14 +677,21 @@ function UploadFiles({ suggestedKeywords, industriesLst }) {
             ).length === 0
           ) {
             console.log("Not include in suggested");
-            setSelectedKeywords([...selectedKeywords, e.target.value.substring(0,51)]);
+            setSelectedKeywords([
+              ...selectedKeywords,
+              e.target.value.substring(0, 51),
+            ]);
             if (selectedTab === 1) {
               var temp_files = selectedTab === 1 ? files : draftFiles;
-              temp_files[selectedFile].keywords.push(e.target.value.substring(0,51));
+              temp_files[selectedFile].keywords.push(
+                e.target.value.substring(0, 51)
+              );
               setFiles(temp_files);
             } else {
               var temp_files = draftFiles;
-              temp_files[selectedFile].keywords.push(e.target.value.substring(0,51));
+              temp_files[selectedFile].keywords.push(
+                e.target.value.substring(0, 51)
+              );
               setDraftFiles(temp_files);
             }
           } else {
@@ -744,25 +778,35 @@ function UploadFiles({ suggestedKeywords, industriesLst }) {
     }
   };
   const removeAllUploaded = () => {
-    var temp_files = files
-    for (var i = 0; i < temp_files.length; i++){
-      var file = temp_files[i]
-      if (file.uploadStatus === "uploaded"){
-        temp_files.splice(i, 1)
-        i--
+    console.log("ououuuuuuuu");
+    var temp_files = files;
+    for (var i = 0; i < temp_files.length; i++) {
+      var file = temp_files[i];
+      if (file.uploadStatus === "uploaded") {
+        temp_files.splice(i, 1);
+        i--;
       }
     }
-    if (temp_files.length > 0){
-      changeSelectedFile(0)
-    }else{
-      changeSelectedFile(-1)
-      setTimeout(()=>{
-        setFileSelectDisabled(false)
-      }, 50)
+    if (temp_files.length > 0) {
+      changeSelectedFile(0);
+    } else {
+      changeSelectedFile(-1);
+      setTimeout(() => {
+        setFileSelectDisabled(false);
+      }, 50);
     }
-    setFiles(temp_files)
-  }
+    setFiles(temp_files);
+  };
   const removeSelectedFile = async (index, fileId) => {
+    console.log(
+      index,
+      fileId,
+      "ooojjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjjj"
+    );
+    console.log("--------------------------------------");
+    console.log(files, "flflflflflflfflflfllflflfllflflfl");
+
+    console.log(selectedFile, "ssfdffsfsfsfsffsfsdffsfs");
     let config = {
       headers: {
         Authorization: "Bearer " + localStorage.getItem("access_token"),
@@ -777,6 +821,7 @@ function UploadFiles({ suggestedKeywords, industriesLst }) {
         setVideoCount1(videoCount1 - 1);
       }
       temp_files.splice(index, 1);
+
       if (temp_files.length !== 0) {
         if (index === selectedFile && selectedFile !== 0) {
           changeSelectedFile(index - 1);
@@ -794,14 +839,17 @@ function UploadFiles({ suggestedKeywords, industriesLst }) {
           setFileSelectDisabled(false);
         }, 200);
       }
+
       setFiles([...temp_files]);
+
+      
       if (errLst.includes(index)) {
         var temp_err_lst = errLst;
         temp_err_lst.splice(temp_err_lst.indexOf(index), 1);
         setErrLst(temp_err_lst);
       }
     } else {
-      console.log(fileId);
+      
       axios
         .post(`${domain}/api/draft/deleteDraft`, { id: fileId }, config)
         .then((res) => {
@@ -840,11 +888,14 @@ function UploadFiles({ suggestedKeywords, industriesLst }) {
           setError(true);
         });
     }
-    if (selectedTab === 1){
-      removeAllUploaded()
+    if (selectedTab === 1) {
+      console.log("+++++++++++");
+      console.log(files, "oofosdfsofosd");
+      // removeAllUploaded()
     }
   };
   const fileChanged = async (e, index) => {
+    console.log("filechngeddd");
     console.log(e.target.files[0]);
     console.log(index);
     var file = e.target.files[0];
@@ -889,7 +940,7 @@ function UploadFiles({ suggestedKeywords, industriesLst }) {
           setCurruptFileErr1(true);
         };
         img.src = URL.createObjectURL(file);
-      }else {
+      } else {
         var temp_files = selectedTab === 1 ? files : draftFiles;
         if (
           temp_files[index].file_type === "video" &&
@@ -921,10 +972,10 @@ function UploadFiles({ suggestedKeywords, industriesLst }) {
       setFormatError(true);
     }
     document.getElementById(e.target.id).value = "";
-    setFileChangeVideoLoading(true)
-    setTimeout(()=>{
-      setFileChangeVideoLoading(false)
-    },10)
+    setFileChangeVideoLoading(true);
+    setTimeout(() => {
+      setFileChangeVideoLoading(false);
+    }, 10);
   };
 
   const publishFile = () => {
@@ -961,7 +1012,7 @@ function UploadFiles({ suggestedKeywords, industriesLst }) {
             files[i].resolutionSatisfied &&
             (files[i].uploadStatus === "selected" ||
               files[i].uploadStatus === "failed") &&
-              files[i].lengthSatisfied
+            files[i].lengthSatisfied
           ) {
             if (files[i].file_type === "image") {
               imageCount += 1;
@@ -1022,7 +1073,10 @@ function UploadFiles({ suggestedKeywords, industriesLst }) {
               (tempFiles[i].uploadStatus === "selected" ||
                 tempFiles[i].uploadStatus === "failed"))
           ) {
-            if (req_fields[j] !== "keywords" && req_fields[j] !== "experience") {
+            if (
+              req_fields[j] !== "keywords" &&
+              req_fields[j] !== "experience"
+            ) {
               if (tempFiles[i][req_fields[j]] === "") {
                 error = true;
                 if (errObjId === null && errObjField === null) {
@@ -1151,7 +1205,10 @@ function UploadFiles({ suggestedKeywords, industriesLst }) {
                 setUploaded1Success(true);
                 setErrLst([]);
                 setUploaded1SuccessTest(
-                  `${temp_files[i].file_name.substring(0, 15)}... added successfully`
+                  `${temp_files[i].file_name.substring(
+                    0,
+                    15
+                  )}... added successfully`
                 );
                 setTimeout(() => {
                   setUploaded1Success(false);
@@ -1203,13 +1260,12 @@ function UploadFiles({ suggestedKeywords, industriesLst }) {
         setSelectedIndustry("");
       }
     } else if (selectedTab === 2 && id === 1) {
-
       updateLimit();
       setErrLst([]);
       setSelectedTab(id);
       if (files.length > 0) {
         setSelectedFile(0);
-        selectFirst()
+        selectFirst();
         document.getElementById("file_name").value = files[0].file_name;
         document.getElementById("experience").value = files[0].experience;
         // document.getElementById("adult").checked = files[0].adult;
@@ -1219,7 +1275,7 @@ function UploadFiles({ suggestedKeywords, industriesLst }) {
         setSelectedIndustry(files[0].industry);
       } else {
         setSelectedFile(0);
-        selectFirst()
+        selectFirst();
         document.getElementById("file_name").value = "";
         document.getElementById("experience").value = "";
         // document.getElementById("adult").checked = "";
@@ -1233,10 +1289,26 @@ function UploadFiles({ suggestedKeywords, industriesLst }) {
     }
   };
 
+  // const generateVideoSource = () => {
+  //   if (selectedFileItem && selectedFileItem.file) {
+  //     if (selectedFileItem.file.name) {
+  //       return URL.createObjectURL(selectedFileItem.file);
+  //     } else if (selectedFileItem.file) {
+  //       return `${videoLink}/${selectedFileItem.file}`;
+  //     }
+  //   }
+  //   return ''; // Default empty string if no valid source is found
+  // };
+
+  // const videoSource = generateVideoSource();
+
+
+  
+
   return (
     <div style={{ position: "relative", background: "#F8FAFB" }}>
       <div className="subnav">
-        <Container className="Container" maxWidth = "xl">
+        <Container className="Container" maxWidth="xl">
           <div
             className={`subnav_link ${selectedTab === 1 && styles.tabSelected}`}
             onClick={() => changeTab(1)}
@@ -1253,14 +1325,18 @@ function UploadFiles({ suggestedKeywords, industriesLst }) {
       </div>
       {uploaded1Success && (
         <div className="upload_file_success_alert">
-          <Container maxWidth = "xl">
+          <Container maxWidth="xl">
             <Alert severity="success" style={{ width: "100%" }}>
               {uploaded1SuccessTest}
             </Alert>
           </Container>
         </div>
       )}
-      <Container className="Container" style={{ paddingBottom: "20px" }} maxWidth = "xl">
+      <Container
+        className="Container"
+        style={{ paddingBottom: "20px" }}
+        maxWidth="xl"
+      >
         <div className={styles.upload_file}>
           <div className={styles.upload_file_left_container}>
             <label
@@ -1270,7 +1346,7 @@ function UploadFiles({ suggestedKeywords, industriesLst }) {
                 display: "block",
               }}
               htmlFor="file_input"
-              onDrop = {(e)=>console.log(e)}
+              onDrop={(e) => console.log(e)}
             >
               {draftSuccess && (
                 <Alert severity="success">Draft files saved successfully</Alert>
@@ -1368,32 +1444,38 @@ function UploadFiles({ suggestedKeywords, industriesLst }) {
                       //   />
                       //   Your browser does not support the video tag.
                       // </video>
-                      fileChangeLoading? ""
-                      :<video
-                        className={styles.upload_file_selected_file}
-                        key={(selectedTab === 1 ? files : draftFiles)[
-                          selectedFile
-                        ].file}
-                        playsInline
-                      >
-                        <source
-                          src={
-                            (selectedTab === 1 ? files : draftFiles)[selectedFile]
-                              .file.name
-                              ? URL.createObjectURL(
-                                  (selectedTab === 1 ? files : draftFiles)[
-                                    selectedFile
-                                  ].file
-                                )
-                              : `${videoLink}/${
-                                  (selectedTab === 1 ? files : draftFiles)[
-                                    selectedFile
-                                  ].file
-                                }`
+                      fileChangeLoading ? (
+                        ""
+                      ) : (
+                        <video
+                          className={styles.upload_file_selected_file}
+                          key={
+                            (selectedTab === 1 ? files : draftFiles)[
+                              selectedFile
+                            ].file
                           }
-                          type="video/mp4"
-                        />
-                      </video>
+                          playsInline
+                        >
+                          <source
+                            src={
+                              (selectedTab === 1 ? files : draftFiles)[
+                                selectedFile
+                              ].file.name
+                                ? URL.createObjectURL(
+                                    (selectedTab === 1 ? files : draftFiles)[
+                                      selectedFile
+                                    ].file
+                                  )
+                                : `${videoLink}/${
+                                    (selectedTab === 1 ? files : draftFiles)[
+                                      selectedFile
+                                    ].file
+                                  }`
+                            }
+                            type="video/mp4"
+                          />
+                        </video>
+                      )
                     ) : (
                       <img
                         src={
@@ -1424,16 +1506,15 @@ function UploadFiles({ suggestedKeywords, industriesLst }) {
                             .file_type === "3d"
                         ? img3dSizeLimit
                         : imgSizeLimit) && (
-                      <div
-                        className={styles.upload_file_error_container}
-                      >
+                      <div className={styles.upload_file_error_container}>
                         <HighlightOffOutlinedIcon
                           className={styles.upload_file_error_icon}
                         />
                         <div className={styles.upload_file_error_content}>
                           File size exceeded maximum{" "}
-                          {(selectedTab === 1 ? files : draftFiles)[selectedFile]
-                            .file_type === "video"
+                          {(selectedTab === 1 ? files : draftFiles)[
+                            selectedFile
+                          ].file_type === "video"
                             ? videoSizeLimit
                             : (selectedTab === 1 ? files : draftFiles)[
                                 selectedFile
@@ -1446,9 +1527,7 @@ function UploadFiles({ suggestedKeywords, industriesLst }) {
                     )}
                     {!(selectedTab === 1 ? files : draftFiles)[selectedFile]
                       .resolutionSatisfied && (
-                      <div
-                        className={styles.upload_file_error_container}
-                      >
+                      <div className={styles.upload_file_error_container}>
                         <HighlightOffOutlinedIcon
                           className={styles.upload_file_error_icon}
                         />
@@ -1459,9 +1538,7 @@ function UploadFiles({ suggestedKeywords, industriesLst }) {
                     )}
                     {!(selectedTab === 1 ? files : draftFiles)[selectedFile]
                       .lengthSatisfied && (
-                      <div
-                        className={styles.upload_file_error_container}
-                      >
+                      <div className={styles.upload_file_error_container}>
                         <HighlightOffOutlinedIcon
                           className={styles.upload_file_error_icon}
                         />
@@ -1472,9 +1549,7 @@ function UploadFiles({ suggestedKeywords, industriesLst }) {
                     )}
                     {(selectedTab === 1 ? files : draftFiles)[selectedFile]
                       .uploadStatus !== "selected" && (
-                      <div
-                        className={styles.upload_file_error_container}
-                      >
+                      <div className={styles.upload_file_error_container}>
                         {(selectedTab === 1 ? files : draftFiles)[selectedFile]
                           .uploadStatus === "pending" ? (
                           <>
@@ -1485,8 +1560,9 @@ function UploadFiles({ suggestedKeywords, industriesLst }) {
                               Uploading
                             </div>
                           </>
-                        ) : (selectedTab === 1 ? files : draftFiles)[selectedFile]
-                            .uploadStatus === "uploaded" ? (
+                        ) : (selectedTab === 1 ? files : draftFiles)[
+                            selectedFile
+                          ].uploadStatus === "uploaded" ? (
                           <>
                             <CheckCircleOutlineIcon
                               className={styles.upload_file_success_icon}
@@ -1536,6 +1612,7 @@ function UploadFiles({ suggestedKeywords, industriesLst }) {
                               onClick={() =>
                                 removeSelectedFile(
                                   selectedFile,
+
                                   (selectedTab === 1 ? files : draftFiles)[
                                     selectedFile
                                   ]._id
@@ -1546,7 +1623,9 @@ function UploadFiles({ suggestedKeywords, industriesLst }) {
                             </div>
                           </>
                         ) : (
-                          <MoreVertIcon className={styles.fileDeleteChangeIcon} />
+                          <MoreVertIcon
+                            className={styles.fileDeleteChangeIcon}
+                          />
                         )}
                       </div>
                     )}
@@ -1556,6 +1635,7 @@ function UploadFiles({ suggestedKeywords, industriesLst }) {
                       <div style={{ textAlign: "center" }}>
                         {(selectedTab === 1 ? files : draftFiles).map(
                           (file, index) => {
+                          
                             return (
                               <>
                                 {file.uploadStatus !== "uploaded" && (
@@ -1568,9 +1648,10 @@ function UploadFiles({ suggestedKeywords, industriesLst }) {
                                         : errLst.includes(index) &&
                                           styles.upload_file_selected_err
                                     }`}
-                                    key={index}
+                                    key={file.file.name || file._id}
                                   >
                                     {file.file_type === "video" ? (
+                                
                                       // <video
                                       //   className={styles.upload_file_selected_file}
                                       //   onClick={() => changeSelectedFile(index)}
@@ -1593,36 +1674,48 @@ function UploadFiles({ suggestedKeywords, industriesLst }) {
                                       //   />
                                       //   Your browser does not support the video tag.
                                       // </video>
-                                      fileChangeVideoLoading?"":
-                                      <video
-                                        className={
-                                          styles.upload_file_selected_file
-                                        }
-                                        onClick={() => changeSelectedFile(index)}
-                                        playsInline
-                                      >
-                                        <source
-                                          src={
-                                            file.file.name
-                                              ? URL.createObjectURL(file.file)
-                                              : `${videoLink}/${file.file}`
+                                      fileChangeVideoLoading ? (
+                                        ""
+                                      ) : (
+                                        <video
+                                          className={
+                                            styles.upload_file_selected_file
                                           }
-                                        />
-                                      </video>
+                                          onClick={() =>
+                                            changeSelectedFile(index)
+                                          }
+                                          playsInline
+                                        >
+                                        
+                                          <source
+                                            src={
+                                              file.file.name
+                                                ? URL.createObjectURL(file.file)
+                                                : `${videoLink}/${file.file}`
+                                            }
+                                          />
+                                        </video>
+                                      )
+                                    ) : fileChangeVideoLoading ? (
+                                      ""
                                     ) : (
-                                      fileChangeVideoLoading?"":
                                       <img
                                         src={
                                           file.file.name
-                                            ? file.thumbnail || `${imageLink}/static/upload_placeholder.png`
+                                            ? file.thumbnail ||
+                                              `${imageLink}/static/upload_placeholder.png`
                                             : `${imageLink}/200x200/${file.file}`
                                         }
                                         className={
                                           styles.upload_file_selected_file
                                         }
-                                        onClick={() => changeSelectedFile(index)}
+                                        onClick={() =>
+                                          changeSelectedFile(index)
+                                        }
                                       />
-                                    )}
+                                    )
+                                    // <p>sadf</p>
+                                    }
 
                                     {file.file.size / 1000000 >
                                       (file.file_type === "video"
@@ -1634,7 +1727,9 @@ function UploadFiles({ suggestedKeywords, industriesLst }) {
                                         className={
                                           styles.upload_file_error_container2
                                         }
-                                        onClick={() => changeSelectedFile(index)}
+                                        onClick={() =>
+                                          changeSelectedFile(index)
+                                        }
                                       >
                                         <HighlightOffOutlinedIcon
                                           className={
@@ -1652,12 +1747,15 @@ function UploadFiles({ suggestedKeywords, industriesLst }) {
                                   </div> */}
                                       </div>
                                     )}
-                                    {(!file.resolutionSatisfied || !file.lengthSatisfied) && (
+                                    {(!file.resolutionSatisfied ||
+                                      !file.lengthSatisfied) && (
                                       <div
                                         className={
                                           styles.upload_file_error_container2
                                         }
-                                        onClick={() => changeSelectedFile(index)}
+                                        onClick={() =>
+                                          changeSelectedFile(index)
+                                        }
                                       >
                                         <HighlightOffOutlinedIcon
                                           className={
@@ -1674,7 +1772,9 @@ function UploadFiles({ suggestedKeywords, industriesLst }) {
                                         className={
                                           styles.upload_file_error_container2
                                         }
-                                        onClick={() => changeSelectedFile(index)}
+                                        onClick={() =>
+                                          changeSelectedFile(index)
+                                        }
                                       >
                                         {file.uploadStatus === "pending" ? (
                                           <>
@@ -1729,7 +1829,6 @@ function UploadFiles({ suggestedKeywords, industriesLst }) {
               ) : selectedTab === 1 ? (
                 <>
                   <div className={styles.upload_file_icon_container}>
-                    
                     <div className={styles.upload_file_icon}>
                       <FilterOutlinedIcon
                         style={{
@@ -1739,16 +1838,22 @@ function UploadFiles({ suggestedKeywords, industriesLst }) {
                           margin: "auto",
                         }}
                       />
-                      <div className = {styles.upload_file_inst_title}>
+                      <div className={styles.upload_file_inst_title}>
                         Drag and drop to upload, or
                       </div>
-                      <button className = {styles.upload_file_btn} style = {{ pointerEvents:"none"}}>
+                      <button
+                        className={styles.upload_file_btn}
+                        style={{ pointerEvents: "none" }}
+                      >
                         Browse
                       </button>
-                      <div className = {styles.upload_file_desc}>
-                        (Maximum <span className = {styles.upload_file_desc_count}>12 shots</span> in One Go for smooth uploads)
+                      <div className={styles.upload_file_desc}>
+                        (Maximum{" "}
+                        <span className={styles.upload_file_desc_count}>
+                          12 shots
+                        </span>{" "}
+                        in One Go for smooth uploads)
                       </div>
-                      
                     </div>
                   </div>
                   <input
@@ -1765,20 +1870,25 @@ function UploadFiles({ suggestedKeywords, industriesLst }) {
                 <Alert severity="info">There is no draft files yet</Alert>
               )}
             </label>
-            {selectedTab === 1?
-            <div className="upload_file_restrictions_container">
-            <div className="upload_file_restriction">
-              <CheckCircleOutlinedIcon className = {styles.checkIcon}/> Maximum size: Images - {imgSizeLimit}MB; Video - {videoSizeLimit}MB
-            </div>
-            <div className="upload_file_restriction">
-              <CheckCircleOutlinedIcon className = {styles.checkIcon}/> Accepted formats: Images - JPEG/JPG/PNG, ; Video - MP4/MOV
-            </div>
-            <div className="upload_file_restriction">
-              <CheckCircleOutlinedIcon className = {styles.checkIcon}/> Image Resolution: Minimum - Width 1100px, Height 500px{" "}
-            </div>
-          </div>
-          :""
-            }
+            {selectedTab === 1 ? (
+              <div className="upload_file_restrictions_container">
+                <div className="upload_file_restriction">
+                  <CheckCircleOutlinedIcon className={styles.checkIcon} />{" "}
+                  Maximum size: Images - {imgSizeLimit}MB; Video -{" "}
+                  {videoSizeLimit}MB
+                </div>
+                <div className="upload_file_restriction">
+                  <CheckCircleOutlinedIcon className={styles.checkIcon} />{" "}
+                  Accepted formats: Images - JPEG/JPG/PNG, ; Video - MP4/MOV
+                </div>
+                <div className="upload_file_restriction">
+                  <CheckCircleOutlinedIcon className={styles.checkIcon} /> Image
+                  Resolution: Minimum - Width 1100px, Height 500px{" "}
+                </div>
+              </div>
+            ) : (
+              ""
+            )}
           </div>
           <div className={styles.upload_file_input_parent_container}>
             <div className={styles.upload_file_input_container}>
@@ -1824,29 +1934,31 @@ function UploadFiles({ suggestedKeywords, industriesLst }) {
                       //   />
                       //   Your browser does not support the video tag.
                       // </video>
-                      fileChangeLoading? ""
-                    :
-                      <video
-                        style={{
-                          height: "100%",
-                          width: "100%",
-                          objectFit: "cover",
-                          borderRadius: "30px",
-                        }}
-                        playsInline
-                      >
-                        <source
-                          src={
-                            selectedTab === 1
-                              ? URL.createObjectURL(files[selectedFile].file)
-                              : draftFiles[selectedFile].file.name
-                              ? URL.createObjectURL(
-                                  draftFiles[selectedFile].file
-                                )
-                              : `${videoLink}/${draftFiles[selectedFile].file}`
-                          }
-                        />
-                      </video>
+                      fileChangeLoading ? (
+                        ""
+                      ) : (
+                        <video
+                          style={{
+                            height: "100%",
+                            width: "100%",
+                            objectFit: "cover",
+                            borderRadius: "30px",
+                          }}
+                          playsInline
+                        >
+                          <source
+                            src={
+                              selectedTab === 1
+                                ? URL.createObjectURL(files[selectedFile].file)
+                                : draftFiles[selectedFile].file.name
+                                ? URL.createObjectURL(
+                                    draftFiles[selectedFile].file
+                                  )
+                                : `${videoLink}/${draftFiles[selectedFile].file}`
+                            }
+                          />
+                        </video>
+                      )
                     ) : (
                       <img
                         src={
@@ -1925,7 +2037,6 @@ function UploadFiles({ suggestedKeywords, industriesLst }) {
                     ? "Title should not be empty and should not contain special characters"
                     : "Title is required"}
                 </div>
-                
               </div>
               <div className={styles.upload_file_input}>
                 <div className={styles.upload_file_input_title}>File type</div>
@@ -2050,8 +2161,7 @@ function UploadFiles({ suggestedKeywords, industriesLst }) {
                   style={{
                     display: "none",
                   }}
-                >
-                </div>
+                ></div>
               </div>
               <div className={styles.upload_file_input}>
                 <div className={styles.upload_file_input_title}>
@@ -2091,30 +2201,31 @@ function UploadFiles({ suggestedKeywords, industriesLst }) {
                     }}
                     autoComplete="off"
                   />
-                  {showSuggestedTags && selectedSuggestedKeywords.length > 0 && (
-                    <div
-                      className={styles.suggestedBrands}
-                      id="suggestedBrands"
-                    >
-                      {selectedSuggestedKeywords.map((item, i) => {
-                        return (
-                          <>
-                            {item
-                              .toLowerCase()
-                              .includes(keyword.toLowerCase()) && (
-                              <div
-                                className={styles.suggestBrands}
-                                onClick={() => addKwdFrmSug(i)}
-                                key={i}
-                              >
-                                {item}
-                              </div>
-                            )}
-                          </>
-                        );
-                      })}
-                    </div>
-                  )}
+                  {showSuggestedTags &&
+                    selectedSuggestedKeywords.length > 0 && (
+                      <div
+                        className={styles.suggestedBrands}
+                        id="suggestedBrands"
+                      >
+                        {selectedSuggestedKeywords.map((item, i) => {
+                          return (
+                            <>
+                              {item
+                                .toLowerCase()
+                                .includes(keyword.toLowerCase()) && (
+                                <div
+                                  className={styles.suggestBrands}
+                                  onClick={() => addKwdFrmSug(i)}
+                                  key={i}
+                                >
+                                  {item}
+                                </div>
+                              )}
+                            </>
+                          );
+                        })}
+                      </div>
+                    )}
                 </div>
                 <div
                   className="input_error_msg"

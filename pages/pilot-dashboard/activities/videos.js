@@ -149,6 +149,9 @@ function Index() {
 
   let [deleteId, setDeleteId] = useState("");
   let confirmDelete = () => {
+    setApprovedImages(approvedImages.filter((item)=>{
+      return item._id!=deleteId
+    }))
     const config = {
       headers: {
         Authorization: "Bearer " + localStorage.getItem("access_token"),

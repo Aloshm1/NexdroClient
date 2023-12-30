@@ -219,6 +219,7 @@ function ApplyJob({ jobs, metaData }, props) {
     });
   };
   let changeHandler = (e, field) => {
+    
     var temp_filter = filter;
     temp_filter[field] = e.target.value;
     setFilter({ ...temp_filter });
@@ -609,6 +610,7 @@ function ApplyJob({ jobs, metaData }, props) {
                   </label>
                   <input
                     type="text"
+                    maxLength={6}
                     className={styles.hirePilotFilterInput}
                     placeholder="Search Keywords"
                     value={filter.keywords}
@@ -626,6 +628,7 @@ function ApplyJob({ jobs, metaData }, props) {
                     </label>
                     <input
                       type="text"
+                      maxLength={6}
                       className={styles.hirePilotFilterInput}
                       placeholder="Search Places..."
                       value={filter.places}

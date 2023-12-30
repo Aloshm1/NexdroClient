@@ -65,7 +65,6 @@ export async function getServerSideProps(context) {
   const { id } = params;
   const res = await fetch(`${domain}/api/image/imageView/${id}`);
   const data = await res.json();
-  
   let metaData = await fetch(`${domain}/api/seo/getSeo/image`);
   let metaDataObj = await metaData.json();
 
@@ -100,7 +99,6 @@ function Id({
   metaData,
   isDetailPopup = false,
 }) {
-  
   const router = useRouter();
   var SI_SYMBOL = ["", "K", "M", "G", "T", "P", "E"];
   let kFormatter = (number) => {
@@ -115,7 +113,6 @@ function Id({
 
     return scaled.toFixed(1) + suffix;
   };
-  const [viewImage,setViewImage]=useState(imageData)
   let [imageLoader, setImageLoader] = useState(false);
   const [open, setOpen] = React.useState(false);
   const [share, setShare] = React.useState(false);
@@ -196,18 +193,13 @@ function Id({
     }
   }, [router.asPath]);
   let [myFollowing, setMyFollowing] = useState([]);
-  let clickedOnImage = (item) => {
-
-    
-   
-    axios.get(`${domain}/api/image/imageView/${item.slug}`).then((res) => {
+  let clickedOnImage = (id) => {
+    axios.get(`${domain}/api/image/imageView/${id}`).then((res) => {
       setComments([...res.data.comments]);
       console.log(res.data.comments);
       setShowReplies([]);
       updateReplies(res.data.comments.length);
-
     });
-    setViewImage(item)
   };
   let nextImage = () => {
     axios
@@ -639,6 +631,7 @@ function Id({
     setReplyInput(value.slice(0, 150));
   };
   const submitReply = () => {
+    
     const config = {
       headers: {
         Authorization: "Bearer " + localStorage.getItem("access_token"),
@@ -672,6 +665,7 @@ function Id({
     }
   };
   const showRepliesHandler = (index) => {
+    console.log('entereddyydydyddyyyy')
     getReplies(index);
     console.log(index);
     var tempShowReplies = showReplies;
@@ -703,6 +697,7 @@ function Id({
     setDeleteCommentId(id)
   }
   const deleteCommentReply = (id) => {
+   
     setDeleteCommentReplyId(id)
   }
   const confirmCommentDelete = () => {
@@ -730,6 +725,11 @@ function Id({
     })
   }
   const confirmReplyDelete = () => {
+    
+    replies.filter((item)=>{
+      return item._id!=deleteCommentReplyId
+    })
+    
     const config = {
       headers: {
         Authorization: "Bearer " + localStorage.getItem("access_token"),
@@ -789,7 +789,7 @@ function Id({
 
             <meta property="og:image" content={`${imageLink}/500x0/${imageData.file}`} />
             <link rel="icon" href="/favicon.ico" />
-            
+
           </Head>
           {!isDetailPopup ? (
               <>
@@ -881,7 +881,7 @@ function Id({
                       </div>
                       <div className={Ivcss.showMoreOption} onClick={reportShot}>
                         <FlagOutlinedIcon />
-                        Report 
+                        Report
                       </div>
                     </div>
                   ) : (
@@ -969,7 +969,7 @@ function Id({
                           }}
                           alt = {imageData.postName}
                         /> */}
-                        <Image 
+                        <Image
                           src={
                             imageData.userId
                               ? `${imageLink}/150x150/${imageData.userId.profilePic}`
@@ -1131,7 +1131,7 @@ function Id({
                                       data-src={``}
                                       alt="profile"
                                     />{" "} */}
-                                    <Image 
+                                    <Image
                                       src={`${imageLink}/86x86/${
                                         item.comment.userId
                                           ? item.comment.userId.profilePic
@@ -1183,7 +1183,7 @@ function Id({
                                           }
                                           aria-label="unlike"
                                         >
-                                          <FavoriteIcon 
+                                          <FavoriteIcon
                                             style={{ color: "#2BC48A", marginRight: "10px" }}
                                           />
                                           {item.comment.likes.length}
@@ -1292,7 +1292,7 @@ function Id({
                                     ""
                                   )}
                                 </div>
-                                {i < comments.length-1? 
+                                {i < comments.length-1?
                                   <hr className={Ivcss.ivHr} />
                                   :""
                                 }
@@ -1317,7 +1317,7 @@ function Id({
                           return (
                             <Grid item lg={6} md={6} sm={4} xs={6} key={i}>
                               <Link
-                               
+                             
                                 href={`/image/${item.slug}`}
                                 aria-label={item.slug}
                               >
@@ -1331,7 +1331,7 @@ function Id({
                                       height="100%"
                                       layout="responsive"
                                       objectFit="cover"
-                                      // onClick={() => clickedOnImage(item)}
+                                      onClick={() => clickedOnImage(item.slug)}
                                       sx={{
                                         height: "100%",
                                         width: "100%",
@@ -1349,7 +1349,7 @@ function Id({
                                         width: "100%",
                                         objectFit: "cover",
                                       }}
-                                      // onClick={() => clickedOnImage(item.slug)}
+                                      onClick={() => clickedOnImage(item.slug)}
                                       playsInline
                                     >
                                       <source
@@ -1367,8 +1367,7 @@ function Id({
                                     </video>
                                   </a>
                                 )}
-                                </Link>
-                              
+                              </Link>
                             </Grid>
                           );
                         })}
@@ -1393,7 +1392,7 @@ function Id({
                       >
                         <div className={styles.homepageOuterFileContainer}>
                           <Link
-                           
+                          
                             href={`/image/${item.slug}`}
                             aria-label={item.slug}
                           >
@@ -1446,7 +1445,7 @@ function Id({
                                   <a
                                     style={{
                                       color: "#fff",
-                                      fontFamily: "roboto-regular",
+                                      fontFamily: "muli-regular",
                                       cursor: "pointer",
                                     }}
                                     className="pilotName"
@@ -1459,7 +1458,7 @@ function Id({
                                 className={`${styles.homepageLikesContainer} pilotName`}
                                 style={{
                                   color: "#fff",
-                                  fontFamily: "roboto-regular",
+                                  fontFamily: "muli-regular",
                                   cursor: "pointer",
                                 }}
                                 aria-label="like"

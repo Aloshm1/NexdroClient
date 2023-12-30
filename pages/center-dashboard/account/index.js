@@ -59,40 +59,40 @@ function Index() {
     axios.post(`${domain}/api/center/getCenterData`, config).then((res) => {
       let center_data = res.data;
       console.log(res.data);
-      setSlug(res.data.centerData.slug)
-      console.log("Profilepic: ", res.data.centerData.profilePic);
-      console.log("Coverpic: ", res.data.centerData.coverPic);
+      setSlug(res?.data?.centerData?.slug)
+      console.log("Profilepic: ", res?.data?.centerData?.profilePic);
+      console.log("Coverpic: ", res?.data?.centerData?.coverPic);
       setData({
         name: center_data.userName,
         email: center_data.userEmail,
-        centerEmailId: center_data.centerData.email,
-        phoneNo: center_data.userPhoneNo,
-        centerPhoneNo: center_data.centerData.phoneNo,
-        secondaryPhoneNo: center_data.centerData.secondaryNumber
-          ? center_data.centerData.secondaryNumber
+        centerEmailId: center_data?.centerData?.email,
+        phoneNo: center_data?.userPhoneNo,
+        centerPhoneNo: center_data?.centerData?.phoneNo,
+        secondaryPhoneNo: center_data?.centerData?.secondaryNumber
+          ? center_data?.centerData?.secondaryNumber
           : "",
-        whatsappNo: center_data.centerData.whatsappNo
-          ? center_data.centerData.whatsappNo
+        whatsappNo: center_data?.centerData?.whatsappNo
+          ? center_data?.centerData?.whatsappNo
           : "",
-        website: center_data.centerData.website
-          ? center_data.centerData.website
+        website: center_data?.centerData?.website
+          ? center_data?.centerData?.website
           : "",
-        location: center_data.centerData.address,
-        description: center_data.centerData.description,
-        profilePic: `${center_data.centerData.profilePic}`,
-        coverPic: `${center_data.centerData.coverPic}`,
+        location: center_data?.centerData?.address,
+        description: center_data?.centerData?.description,
+        profilePic: `${center_data?.centerData?.profilePic}`,
+        coverPic: `${center_data?.centerData?.coverPic}`,
         // holidays: center_data.centerData.holidays,
         // brands: center_data.centerData.brandOfDrones,
-        centerName: center_data.centerData.centerName,
-        street: center_data.centerData.streetName,
-        establishedYear: center_data.centerData.establishedYear,
-        workingFrom: center_data.centerData.workingHours.slice(0, 5),
-        workingTill: center_data.centerData.workingHours.slice(8, 13),
+        centerName: center_data?.centerData?.centerName,
+        street: center_data?.centerData?.streetName,
+        establishedYear: center_data?.centerData?.establishedYear,
+        workingFrom: center_data?.centerData?.workingHours.slice(0, 5),
+        workingTill: center_data?.centerData?.workingHours.slice(8, 13),
       });
       setLoadingImage(false)
-      setOldPhotos(center_data.centerData.images);
-      setHolidays(center_data.centerData.holidays);
-      setSelectedBrands(center_data.centerData.brandOfDrones);
+      setOldPhotos(center_data?.centerData?.images);
+      setHolidays(center_data?.centerData?.holidays);
+      setSelectedBrands(center_data?.centerData?.brandOfDrones);
     });
   }, []);
   let [oldPhotos, setOldPhotos] = useState([]);

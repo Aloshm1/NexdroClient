@@ -320,6 +320,7 @@ function Index() {
       },
     };
     setLoadingImage(true);
+    
 
     getPilotDetails();
     axios.get(`${domain}/api/industry/getIndustries`).then((res) => {

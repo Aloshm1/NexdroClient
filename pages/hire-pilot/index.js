@@ -120,6 +120,9 @@ function HirePilot({ pilots, drone_brands_data, metaData }) {
   let [filterPopup, setFilterPopup] = useState(false);
   let [noCompany, setNoCompany] = useState(false);
   let [isLoggedIn, setIsLoggedIn] = useState(false);
+ 
+
+
   const handleClickOpen = () => {
     setOpen(true);
   };
@@ -842,6 +845,7 @@ function HirePilot({ pilots, drone_brands_data, metaData }) {
                         value={filter.selectedDrones}
                         onChange={handleChangeDrone}
                         options={drones}
+                      
                         styles={customStyles}
                         isMulti
                         id="industry1"
@@ -885,6 +889,7 @@ function HirePilot({ pilots, drone_brands_data, metaData }) {
                     <Grid item xs={12} md={4}>
                       <input
                         type="text"
+                        maxLength={10}
                         className={`inputBox1`}
                         placeholder="Search Industry / Skills / Name"
                         value={filter.industryInput}
@@ -897,6 +902,7 @@ function HirePilot({ pilots, drone_brands_data, metaData }) {
                       <input
                         type="text"
                         className={`inputBox1`}
+                        maxLength={10}
                         placeholder="Search City / Country"
                         value={filter.locationInput}
                         id="locationInput"
@@ -1703,6 +1709,7 @@ function HirePilot({ pilots, drone_brands_data, metaData }) {
                       <Select
                         value={filter.selectedDrones}
                         onChange={handleChangeDrone}
+                       
                         options={drones}
                         styles={customStyles}
                         isMulti
