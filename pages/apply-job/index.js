@@ -99,7 +99,7 @@ export async function getServerSideProps({ req, res }) {
     `${domain}/api/jobs/filterJobs?page=1`,
     temp_data
   );
-  console.log(response.data)
+  console.log(response.data,'dtatassaatattttttdta')
   let data = await fetch(`${domain}/api/seo/getSeo/jobs`);
   let metaData = await data.json();
   try {
@@ -145,7 +145,20 @@ function ApplyJob({ jobs, metaData }, props) {
     setCount(count++);
   };
   const [share, setShare] = React.useState(false);
-
+  
+  const calculateDaysAgo=(timestamp)=> {
+    const currentDate = new Date();
+    const createdAtDate = new Date(timestamp);
+    
+    
+    const differenceInTime = currentDate.getTime() - createdAtDate.getTime();
+    const differenceInDays = Math.floor(differenceInTime / (1000 * 3600 * 24));
+    if(differenceInDays==0){
+      return `Today`
+    }
+  
+    return `${differenceInDays} days ago`;
+  }
   useEffect(() => {
     handleScroll1();
   }, [count]);
@@ -213,6 +226,7 @@ function ApplyJob({ jobs, metaData }, props) {
   });
   let [isLoading, setLoading] = useState(false);
   let handlePriceRange = async (e, value) => {
+    console.log(value,'vbvbvbbv')
     setFilter({
       ...filter,
       salaryRange: value,
@@ -722,8 +736,10 @@ function ApplyJob({ jobs, metaData }, props) {
                         }
                         value={filter.salaryRange}
                         onChange={handlePriceRange}
-                        min={500}
+                        min={100}
                         max={20000}
+                        
+                      
                       />
                     </Box>
                   </div>
@@ -946,7 +962,7 @@ function ApplyJob({ jobs, metaData }, props) {
                                 </div>
                                 <div className={job.jobNewApplyContainer}>
                                   <p className={job.jobNewPostedDate}>
-                                    2days ago
+                                    { calculateDaysAgo(item.createdAt)}
                                   </p>
                                   <Button
                                     variant="contained"
@@ -1248,8 +1264,8 @@ function ApplyJob({ jobs, metaData }, props) {
                     }
                     value={filter.salaryRange}
                     onChange={handlePriceRange}
-                    min={1}
-                    max={4000}
+                    
+                   
                   />
                 </Box>
               </div>

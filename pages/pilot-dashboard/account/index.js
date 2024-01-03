@@ -486,9 +486,9 @@ function Index() {
             }
             document.getElementById(`${fields[i]}_error`).style.display =
               "block";
-          } else if (data[fields[i]].length > 25) {
+          } else if (data[fields[i]].length > 25 || !/^[A-Za-z]+$/.test(data[fields[i]])) {
             document.getElementById("name_error").innerText =
-              "Name should not exceed 25 characters";
+            "Name should not exceed 25 characters and must contain only alphabetic characters";
             error = true;
             if (focusField === "") {
               focusField = fields[i];
@@ -496,6 +496,7 @@ function Index() {
             document.getElementById(`${fields[i]}_error`).style.display =
               "block";
           }
+         
         }
         if (fields[i] === "userName") {
           if (data[fields[i]].length === 0) {
@@ -618,7 +619,7 @@ function Index() {
         if (
           fields[i] === "bio" &&
           data.bio.length !== 0 &&
-          (data.bio.length > 1500 || data.bio.length < 3)
+          (data.bio.length > 1500 || data.bio.length < 3 ||  data.bio.split(/\b[\s,\.-:;]*/).length < 50 || data.bio.split(/\b[\s,\.-:;]*/).length > 200)
         ) {
           document.getElementById(`${fields[i]}_error`).style.display = "block";
           if (focusField === "") {
@@ -942,9 +943,12 @@ function Index() {
   };
 
   const removeDrone = (index) => {
-    var temp_drones = data.droneType;
-    temp_drones.splice(index, 1);
-    setData({ ...data, droneType: [...temp_drones] });
+    if(edit){
+      var temp_drones = data.droneType;
+      temp_drones.splice(index, 1);
+      setData({ ...data, droneType: [...temp_drones] });
+    }
+
   };
 
   const pilotTypeChangeHandler = (e) => {
@@ -2016,7 +2020,7 @@ function Index() {
               value={data.bio}
             ></textarea>
             <div className="input_error_msg" id="bio_error">
-              Bio should be between 3 to 500 characters.
+              Bio should be between 3 to 500 characters & between 50 and 200 words
             </div>
           </Grid>
           <div className="input_error_msg" id="credentials_error">

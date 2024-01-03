@@ -42,7 +42,7 @@ function CompanyAccount({ children }) {
                     <div id="navScrollHide">
                       <div>
                         <button className={dashboardCss.mainTitle}>
-                          General
+                          
                         </button>
                         <hr className={dashboardCss.horiLine} />
                           <div

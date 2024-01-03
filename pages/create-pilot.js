@@ -117,6 +117,7 @@ function CreatePilot() {
     axios.get(`${domain}/api/brand/getOnlyBrands`).then((res) => {
       console.log(res);
       setBrands(res.data);
+      console.log(res.data,'oofodofodsfoofsdosdf')
     });
   }, []);
 

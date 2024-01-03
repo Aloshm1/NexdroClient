@@ -139,7 +139,7 @@ function Chat({ id, loadData}) {
       socket.emit("typingStopped", { chatData, myId });
     }
 
-    document.getElementById("message_error").display = "none";
+    document.getElementById("message_error").style.display = "none";
     setMsgInput(e.target.value);
   };
 
@@ -151,12 +151,19 @@ function Chat({ id, loadData}) {
     }
   };
   const sendMsg = () => {
+    
     socket.emit("typingStopped", { chatData, myId });
-    if (msgInput.length > 100 || msgInput.trim().length <= 0) {
+    if (msgInput.length > 100 || msgInput.length < 3 || msgInput.trim().length <= 0) {
       document.getElementById("message_error").innerHTML =
         "Message should be between 3 - 100";
-      document.getElementById("message_error").display = "block";
+      document.getElementById("message_error").style.display = "block";
+      var elem = document.getElementById("msgsContainer");
+      elem.scrollTo({
+        top: elem.scrollHeight + 100,
+        behavior: "smooth",
+      });
     } else {
+      document.getElementById("message_error").style.display = "none";
       const config = {
         headers: {
           Authorization: "Bearer " + localStorage.getItem("access_token"),
@@ -307,17 +314,26 @@ let redirectToLanding = (id) =>{
             onKeyUp={checkEnter}
             id="chatInput"
           />
+           
           <div className={css.send} onClick={sendMsg}>
             <SendIcon sx={{ margin: "0px", padding: "0px" }} />
           </div>
-          <div className="input_error_msg" id="message_error"></div>
+          
         </div>
+        
+          
         <div
           style={{ height: "calc(100% - 50px)", overflowY: "auto" }}
           id="msgsContainer"
         >
+          
+         
+       
+            
+            
           {/* //message input */}
           {data.map((item, index) => {
+          
             return (
               <div key={index}>
                 {
@@ -326,6 +342,7 @@ let redirectToLanding = (id) =>{
                 {
                 index !== 0 &&  (moment(item.createdAt).format("DD-MM-YY") !== moment(data[index-1].createdAt).format("DD-MM-YY")) && <div className={css.headDate}>{moment().format('DD-MM-YY') !== moment(item.createdAt).format("DD-MM-YY") ? moment(item.createdAt).format("DD-MM-YY") : "Today"}</div>
                 }
+                
                 
                 <>
                   {item.sender._id == myId ? (
@@ -350,11 +367,16 @@ let redirectToLanding = (id) =>{
                       />
                       <div className={css.message}>{item.message}</div>
                     </div>
+
                   )}
                 </>
+              
               </div>
             );
+           
           })}
+           
+          
           {typing ? (
             <div className={css.typing} style={{ width: "fit-content" }}>
               <Loader />
@@ -362,8 +384,14 @@ let redirectToLanding = (id) =>{
           ) : (
             <></>
           )}
+           <div style={{color:'gray'}} className="input_error_msg" id="message_error">
+        
+          </div>
+        
         </div>
+        
       </div>
+     
     </div>
   );
 }

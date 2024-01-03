@@ -1993,6 +1993,7 @@ function UploadFiles({ suggestedKeywords, industriesLst }) {
                 </div>
                 <input
                   className={`${styles.upload_file_input_field}`}
+                  maxLength={20}
                   type="text"
                   id="file_name"
                   name="file_name"

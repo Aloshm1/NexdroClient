@@ -253,7 +253,7 @@ function CreateJob({id}) {
       document.getElementById("openings_error").style.display = "block";
       focusField = "openings";
     }
-    if (desc !== "" && (desc.length < 1000 || desc.length > 50000)) {
+    if (desc !== "" && (desc.length < 1000 || desc.length > 50000 || desc.split(/\b[\s,\.-:;]*/).length < 50 || desc.split(/\b[\s,\.-:;]*/).length > 200)) {
       document.getElementById("description_error").innerHTML =
         "Please write atleast 50 words to maximum 1000 words";
       document.getElementById("description_error").style.display = "block";

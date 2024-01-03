@@ -38,6 +38,7 @@ function Index() {
   let [step2, setStep2] = useState(false);
   let [otp, setOtp] = useState("");
   let [otpData, setOtpData] = useState(0);
+  const [brand,setBrands]=useState()
   let changeOtp = (e) => {
     document.getElementById("otp_error").style.display = "none";
     if (Number(e.target.value.length <= 4)) {
@@ -50,11 +51,20 @@ function Index() {
       document.getElementById("successalert").style.display = "flex";
       localStorage.removeItem("profileCreated");
     }
+   
+  
+    
     const config = {
       headers: {
         Authorization: "Bearer " + localStorage.getItem("access_token"),
       },
     };
+    axios.get(`${domain}/api/brand/getBrands`).then((res) => {
+   
+      console.log(res.data,'oogogogogogog')
+      setBrands(res.data);
+          
+    });
     axios.get(`${domain}/api/industry/getIndustries`).then((res) => {
       setIndustries(res.data);
       setMainIndustries(res.data);

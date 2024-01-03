@@ -7,9 +7,11 @@ import { useState } from "react";
 import CompanyAccount from "../../../components/layouts/CompanyAccount";
 import css from "../../../styles/company.module.css";
 const domain = process.env.NEXT_PUBLIC_LOCALHOST;
+ const currentYear = new Date().getFullYear()
 function PageInfo() {
   let [slug, setSlug] = useState("");
   let [edit, setEdit] = useState(false);
+ 
   useEffect(() => {
     const config = {
       headers: {
@@ -71,7 +73,7 @@ function PageInfo() {
     }
     if (
       data.foundingYear !== "" &&
-      (Number(data.foundingYear) < 1900 || Number(data.foundingYear) > 2022)
+      (Number(data.foundingYear) < 1900 || Number(data.foundingYear) > currentYear)
     ) {
       document.getElementById("foundingYear_error").innerHTML =
         "Invalid Founding Year";
@@ -250,6 +252,7 @@ function PageInfo() {
           <label className="inputLabel">City</label>
           <div>
             <input
+            maxLength={20}
               className="inputBox"
               type="text"
               value={data.city}

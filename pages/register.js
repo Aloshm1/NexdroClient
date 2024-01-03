@@ -384,6 +384,7 @@ function Register() {
                   </label>
                   <input
                     type="text"
+            
                     id="phone"
                     className={`inputBox ${styles.registerInput}`}
                     value={`${formData.code} ${formData.phone}`}

@@ -39,6 +39,7 @@ function Index() {
   const [formatError, setFormatError] = useState(false);
   const [formatError2, setFormatError2] = useState(false);
   let [slug, setSlug] = useState("")
+  const currentYear = new Date().getFullYear()
   useEffect(() => {
     setLoadingImage(true)
     if (localStorage.getItem("profileCreated") == "true") {
@@ -628,10 +629,10 @@ function Index() {
     }
     if (
       data.establishedYear !== "" &&
-      (data.establishedYear < 1900 || data.establishedYear > 2025)
+      (Number(data.establishedYear) < 1900 || Number( data.establishedYear )> currentYear)
     ) {
       document.getElementById("establishedYear_error").innerHTML =
-        "Established year shuld be between 1900 - 2025";
+        ` year shuld be between 1900 - ${currentYear}`;
       document.getElementById("establishedYear_error").style.display = "block";
       if (focusField == "") {
         focusField = "establishedYear";

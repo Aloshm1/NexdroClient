@@ -371,6 +371,7 @@ function CreatePilot() {
                     </label>
                     <input
                       className="inputBox"
+                      pattern="[A-Za-z]+"
                       type="text"
                       value={data.contactPerson}
                       onChange={changeHandler}
